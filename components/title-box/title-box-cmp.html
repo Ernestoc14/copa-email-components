@@ -1,3 +1,4 @@
+<!-- Debe tener un padding interno -->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
   xmlns:o="urn:schemas-microsoft-com:office:office">
@@ -118,10 +119,12 @@
       .code-cell {
         clear: both;
         text-align: left;
-        /* padding: 32px 0 0 0 !important; */
+        padding: 32px 0 0 0 !important;
         min-width: 100% !important;
       }
     }
+
+    @media all and (max-width: 375px) {}
 
     @media all and (max-width:719px) {
       .date-cell {
@@ -158,7 +161,6 @@
       font-family: SuisseIntl, Helvetica, Arial, sans-serif;
       margin: 0;
       margin-bottom: 5px;
-      display: block;
     }
 
     .subtitle-info-flight {
@@ -167,86 +169,43 @@
       color: #333333;
       font-family: Gilroy, Helvetica, Arial, sans-serif;
       margin: 0;
-      display: block;
-      white-space: nowrap;
     }
   </style>
 </head>
 
-<body style="
-      font-family: 'Poppins', Arial, sans-serif; margin: 0; border: 0; padding: 0;">
-  <table width="100%" cellpadding="0" cellspacing="0" border="0"
-    style="margin: 0;width: 100%;background-color: #fcfcfc; border-collapse: collapse;">
+<body style="font-family: 'Poppins', Arial, sans-serif; margin: 0; border: 0; padding: 0;">
+  <table cellpadding="0" cellspacing="0" border="0"
+    style="margin: 0;width: 100%;background-color: #0032A0; border-collapse: collapse;border-bottom: 1px solid #CCCCCB;">
     <tr>
-      <td style="font-size: 14px;
-        /* REMOVER ESTE PADDING ESO SOLO DE TESTING */
-            padding: 32px 40px;
-        ">
-        <!-- Inicia tabla con la info del vuelo-->
-        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%">
+      <td style="font-size: 14px;">
+        <!-- Inicia -->
+        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; color: #FFFFFF;">
           <tr>
-            <th class="two-first-fields">
-              <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: auto;">
+            <td class="two-first-fields">
+              <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%;">
                 <tr>
-                  <th class="info-mobile">
+                  <td class="info-mobile" style="width: 100%;">
                     <table border="0" cellpadding="0" cellspacing="0" role="presentation">
                       <tr>
-                        <td style="padding-right: 16px;" class="city-image">
-                          <div
-                            style="border: 1px solid #0032A0;width: 52px;height: 52px;border-radius: 50%;padding: 1px;margin: 0 auto;"
-                            class="no-border">
-                            <!--Change the "JFK" below with the IAT Code of the destination in uppercase-->
-                            <img src="https://www.copaair.com/webassets/images/destinos/circulados/JFK.png" width="52"
-                              height="52" border="0" style="border:0;">
-                          </div>
-                        </td>
-                        <td>
-                          <p class="title-info-flight">
-                            Destination&nbsp;:
+                        <td style="word-break: break-word; padding: 32px 0 24px; height: 60px;">
+                          <p style="font-weight: 700; font-size: 32px; line-height: 40px;font-family: Gilroy, Helvetica, Arial, sans-serif;">
+                            Disfruta nuestra experiencia abordo
                           </p>
-                          <p class="subtitle-info-flight">
-                            Santiago de los Caballeros
+                          <p style="font-weight: 400; font-size: 16px; line-height: 24px; margin: 0; padding-top: 8px; white-space: nowrap;">
+                            Conoce la comida y opciones de entretenimiento que te esperan durante tu viaje
                           </p>
                         </td>
                       </tr>
                     </table>
-                  </th>
-                  <!-- Divider Vertical -->
-                  <td style="border-collapse: collapse; margin: 0; padding: 0 32px; ">
-                    <p style="border-left: solid 1px #667EB5;height: 30px; font-size: 1px; display: block;">
-                      &nbsp;
-                    </p>
                   </td>
-                  <th style="width: auto;" class="date-cell info-mobile">
-                    <p class="title-info-flight">
-                      Date&nbsp;:</p>
-                    <p id="fDate" class="subtitle-info-flight">
-                      Mar&nbsp;&#8203;,18&nbsp;&#8203;Sep
-                    </p>
-                  </th>
-                  <!-- Divider Vertical -->
-                  <td style="border-collapse: collapse; margin: 0; padding: 0 32px; ">
-                    <p style="border-left: solid 1px #667EB5;font-size: 1px;height: 30px; display: block;">
-                      &nbsp;
-                    </p>
-                  </td>
-                  <th style="width: auto;" class="code-cell">
-                    <p class="title-info-flight">
-                      Code de réservation&nbsp;:
-                    </p>
-                    <p class="subtitle-info-flight">
-                      EBXGHT
-                    </p>
-                  </th>
                 </tr>
               </table>
-            </th>
+            </td>
           </tr>
         </table>
-        <!-- finaliza tabla con la info del vuelo-->
+        <!-- Finaliza -->
       </td>
     </tr>
   </table>
 </body>
-
 </html>
