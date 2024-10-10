@@ -17,6 +17,15 @@
         .card-logo {
           margin-right: 0 !important;
         }
+        .mobile-padding {
+          padding: 16px 32px !important;
+        }
+        .title-info-reorder {
+          background-color: red !important;
+        }
+        .remove-span-info {
+          display: none !important;
+        }
       }
     </style>
   </head>
@@ -25,12 +34,12 @@
       font-family: 'Poppins', Arial, sans-serif; margin: 0; border: 0; padding: 0;">
     <table width="100%" cellpadding="0" cellspacing="0" border="0"style="margin: 0;width: 100%;background-color: #fcfcfc; border-collapse: collapse;border-top-left-radius: 16px;border-top-right-radius: 16px;border-bottom: 1px solid #dbdad8;">
       <tr>
-        <td style="font-size: 14px; padding: 32px 48px">
+        <td style="font-size: 14px; padding: 32px 48px" class="mobile-padding">
           <table cellpadding="0" cellspacing="0" border="0" style="width: auto">
             <!-- EMAIL CONTENT -->
             <!-- Header -->
             <tbody>
-              <tr style="height: 100%">
+              <tr style="height: 100%" class="title-info-reorder">
                 <td>
                   <img
                     src="https://www.copaair.com/webassets/images/notifications/Equipaje-circle.png"
@@ -39,20 +48,27 @@
                     alt="card logo"
                   />
                 </td>
-                <td style="color: #0032a0; padding: 0 8px; vertical-align: middle;">
-                  <p style="width: 120px;font-size: 20px;font-weight: 700; margin:0;font-family: Gilroy, Arial, Helvetica, sans-serif;">
-                    Section Title
-                  </p>
-                </td>
-                <td style="align-items: center; color: #666666; vertical-align: middle;">
-                  <p style=" display: inline;align-items: center;justify-content: center; margin: 0;">
-                    <span>·</span>
-                    <span style="padding: 0 8px">Information</span>
-                  </p>
-                  <p style=" display: inline;align-items: center;justify-content: center;">
-                    <span>·</span>
-                    <span style="padding-left: 8px">Information</span>
-                  </p>
+                <td>
+                  <table>
+                    <!--  td dentro de tabla debe ser dp block -->
+                    <tr>
+                      <td style="color: #0032a0; padding: 0 8px; vertical-align: middle;">
+                        <p style="width: 120px;font-size: 20px;font-weight: 700; margin:0;font-family: Gilroy, Arial, Helvetica, sans-serif;">
+                          Section Title
+                        </p>
+                      </td>
+                      <td style="align-items: center; color: #666666; vertical-align: middle;">
+                        <p style=" display: inline;align-items: center;justify-content: center; margin: 0;">
+                          <span class="remove-span-info">·</span>
+                          <span style="padding: 0 8px">Information</span>
+                        </p>
+                        <p style=" display: inline;align-items: center;justify-content: center;">
+                          <span>·</span>
+                          <span style="padding-left: 8px">Information</span>
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
                 </td>
               </tr>
             </tbody>
