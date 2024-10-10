@@ -103,6 +103,29 @@
       }
     }
   </style>
+  <style type="text/css">
+    @media all and (max-width: 719px) {
+      .card-logo {
+        margin-right: 0 !important;
+      }
+
+      .mobile-padding {
+        padding: 32px 16px !important;
+      }
+
+      .title-info-reorder {
+        display: block !important;
+      }
+
+      .remove-span-info {
+        display: none !important;
+      }
+
+      .mobile-padding-bottom {
+        padding-bottom: 4px !important;
+      }
+    }
+  </style>
 
   <!--[if mso]>
         <style type="text/css">
@@ -145,33 +168,49 @@
         <!-- Header -->
         <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%;min-width:100%;">
           <tr>
-            <td class="mobile-padding" style="background-color: #0032A0;padding: 48px 64px">
+            <!-- Verificar Padding -->
+            <td class="mobile-padding" style="background-color: #0032A0;padding: 48px 64px 0">
               <!-- Reemplazo -->
-              <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%;min-width:100%;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0"
+                style="margin: 0;width: 100%;background-color: #fcfcfc; border-collapse: collapse;border-top-left-radius: 16px;border-top-right-radius: 16px;border-bottom: 1px solid #dbdad8;">
                 <tr>
-                  <td>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa alias nemo, qui
-                    explicabo ipsum neque ex consequuntur aliquam est velit dolorum eaque esse sit
-                    molestiae, officiis laborum aliquid rem amet.
+                  <td style="font-size: 14px; padding: 32px 48px" class="mobile-padding">
+                    <table cellpadding="0" cellspacing="0" border="0" style="width: auto">
+                      <tbody>
+                        <tr style="height: 100%" class="title-info-reorder">
+                          <td>
+                            <img src="https://www.copaair.com/webassets/images/notifications/Equipaje-circle.png"
+                              style="width: 48px;border: 0;margin: 0;padding: 0; height: auto;outline: none;text-decoration: none; display: block;"
+                              class="card-logo" alt="card logo" />
+                          </td>
+                          <td>
+                            <table>
+                              <tr>
+                                <td style="color: #0032a0; padding: 0 8px; vertical-align: middle;"
+                                  class="title-info-reorder mobile-padding-bottom">
+                                  <p
+                                    style="width: 120px;font-size: 20px;font-weight: 700; margin:0;font-family: Gilroy, Arial, Helvetica, sans-serif; white-space: nowrap;">
+                                    Section Title
+                                  </p>
+                                </td>
+                                <td
+                                  style="align-items: center; color: #666666; vertical-align: middle; white-space: nowrap;"
+                                  class="title-info-reorder">
+                                  <span class="remove-span-info">·</span>
+                                  <span style="padding: 0 8px">Information</span>
+                                  <span>·</span>
+                                  <span style="padding-left: 8px">Information</span>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </td>
                 </tr>
               </table>
-            </td>
-          </tr>
-        </table>
-        <!-- Body -->
-        <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%;min-width:100%;">
-          <tr>
-            <td style="padding: 32px 0;">
-              <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%;min-width:100%;">
-                <tr>
-                  <td class="mobile-padding" style="padding: 0 48px">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa alias nemo, qui
-                    explicabo ipsum neque ex consequuntur aliquam est velit dolorum eaque esse sit
-                    molestiae, officiis laborum aliquid rem amet.
-                  </td>
-                </tr>
-              </table>
+              <!-- End Reemplazo Contenido -->
             </td>
           </tr>
         </table>
@@ -198,4 +237,5 @@
   </table>
   <div>&nbsp;</div>
 </body>
+
 </html>
