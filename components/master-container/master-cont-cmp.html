@@ -97,11 +97,6 @@
         display: block !important;
       }
 
-      .mobile-padding {
-        padding-left: 16px !important;
-        padding-right: 16px !important;
-      }
-
       .card-logo {
         margin-right: 0 !important;
       }
@@ -116,7 +111,7 @@
       }
 
       .mobile-padding {
-        padding: 32px 16px !important;
+        padding: 0 16px !important;
       }
 
       .title-info-reorder {
@@ -129,6 +124,13 @@
 
       .title-mobile-padding {
         padding-bottom: 4px !important;
+      }
+
+      .titlebox-mobile-padding {
+        padding-top: 32px !important;
+      }
+      .titlebox-remove-mbpadding {
+        padding: 0 !important;
       }
     }
   </style>
@@ -206,7 +208,7 @@
         <table style="background-color: #0032A0; border-top-left-radius: 8px; border-top-right-radius: 8px;">
           <tr>
             <td>
-              <!-- Header Logo -->
+              <!-- Start Header Logo -->
               <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%;min-width:100%;">
                 <tr>
                   <td class="header-logo-padding" style="padding: 32px 32px 0;">
@@ -234,33 +236,117 @@
                   </td>
                 </tr>
               </table>
-              <!-- Header Info -->
+              <!-- End Header Logo -->
+              <!-- Start Header Info -->
               <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%;min-width:100%;">
                 <tr>
                   <!-- Fix en este Padding para spacing interno del componente (Title Box - Prep email) -->
                   <td class="mobile-padding" style="background-color: #0032A0; padding: 0 32px">
                     <!-- Start Replace Header -->
-                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; color: #FFFFFF;">
+                    <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                      style="width:100%; color: #FFFFFF;">
                       <tr>
-                        <td class="two-first-fields">
-                          <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%;">
+                        <td class="titlebox-remove-mbpadding" style="width: 100%; padding: 0 40px;">
+                          <!-- Start TitleBox Cmp -->
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation">
                             <tr>
-                              <td class="info-mobile" style="width: 100%; padding: 0 32px;">
-                                <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                              <td style="word-break: break-word; padding: 48px 0 24px; height: 60px;" class="titlebox-mobile-padding">
+                                <p
+                                  style="margin: 0; font-weight: 700; font-size: 32px; line-height: 40px;font-family: Gilroy, Helvetica, Arial, sans-serif;">
+                                  Disfruta nuestra experiencia abordo
+                                </p>
+                                <p
+                                  style="font-weight: 400; font-size: 16px; line-height: 24px; margin: 0; padding-top: 8px; white-space: nowrap;">
+                                  Conoce la comida y opciones de entretenimiento que te esperan durante tu viaje
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                          <!-- End TitleBox Cmp -->
+                          <!-- Start InfoBar Cmp -->
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:80%">
+                            <tr>
+                              <td class="two-first-fields">
+                                <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                  style="width: 100%;">
                                   <tr>
-                                    <td style="word-break: break-word; padding: 32px 0 24px; height: 60px;">
-                                      <p style="margin: 0; font-weight: 700; font-size: 32px; line-height: 40px;font-family: Gilroy, Helvetica, Arial, sans-serif;">
-                                        Disfruta nuestra experiencia abordo
+                                    <td class="info-mobile" style="width: 180px;">
+                                      <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                        <tr>
+                                          <td style="padding-right: 16px;" class="city-image">
+                                            <div
+                                              style="border: 1px solid #0032A0;width: 52px;height: 52px;border-radius: 50%;padding: 1px;margin: 0 auto;"
+                                              class="no-border">
+                                              <!--Change the "JFK" below with the IAT Code of the destination in uppercase-->
+                                              <img
+                                                src="https://www.copaair.com/webassets/images/destinos/circulados/JFK.png"
+                                                width="52" height="52" border="0" style="border:0;">
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <p class="title-info-flight">
+                                              Destination:
+                                            </p>
+                                            <p class="subtitle-info-flight" style="white-space: nowrap;">
+                                              <!-- Width Mayor a 800px cuando destino= Santiago DLC -->
+                                              <!-- Santiago de Los Caballeros -->
+                                              Panama
+                                            </p>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                    <td style="padding: 8px 32px; width: 50px;" class="divider-vertical-line">
+                                      <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                        width="100%">
+                                        <tr>
+                                          <td style="border-left: 1px solid #CCCCCB;width: 1px;height: 32px;">
+                                            &nbsp;
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                    <td style="width: 180px;" class="date-cell info-mobile">
+                                      <p class="title-info-flight">
+                                        Date:
                                       </p>
-                                      <p style="font-weight: 400; font-size: 16px; line-height: 24px; margin: 0; padding-top: 8px; white-space: nowrap;">
-                                        Conoce la comida y opciones de entretenimiento que te esperan durante tu viaje
+                                      <p id="fDate" class="subtitle-info-flight" style="white-space: nowrap;">
+                                        Mar&nbsp;&#8203;,18&nbsp;&#8203;Sep
                                       </p>
+                                    </td>
+                                    <td style="padding: 8px 32px; width: 50px;" class="divider-vertical-line">
+                                      <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                        width="100%">
+                                        <tr>
+                                          <td style="border-right: 1px solid #CCCCCB;width: 1px;height: 32px;">
+                                            &nbsp;
+                                          </td>
+                                        </tr>
+                                      </table>
                                     </td>
                                   </tr>
                                 </table>
                               </td>
+                              <td style="width: 180px;" class="code-cell">
+                                <p class="title-info-flight" style="white-space: nowrap;">
+                                  Codigo de reserva:
+                                </p>
+                                <p class="subtitle-info-flight">
+                                  EBXGHT
+                                </p>
+                              </td>
                             </tr>
                           </table>
+                          <!-- End InfoBar Cmp -->
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- SpaceBar Cmp -->
+                    <table style="height: 48px; line-height: 0; border-collapse: collapse; width: 100%;" cellpadding="0" cellspacing="0" border="0">
+                      <!-- Height debe ser dinamico para que el componente sea reutilizable -->
+                      <tr>
+                        <td>
+                          &nbsp;
                         </td>
                       </tr>
                     </table>
@@ -268,6 +354,7 @@
                   </td>
                 </tr>
               </table>
+              <!-- End Header Info  -->
             </td>
           </tr>
         </table>
