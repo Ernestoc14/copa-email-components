@@ -98,25 +98,6 @@
     body {
       -webkit-font-smoothing: antialiased;
     }
-
-    /* Spacebar Component Styles */
-    .spacebar {
-      line-height: 0;
-      /* Evitar espacio adicional */
-      height: 8px;
-      /* Ajustar altura */
-      border-collapse: collapse;
-      width: 100%;
-    }
-
-    /* Variantes para diferentes tamaños */
-    .spacebar.small {
-      height: 8px;
-    }
-
-    .spacebar.large {
-      height: 32px;
-    }
   </style>
 
   <style>
@@ -131,7 +112,7 @@
 
 <body style="font-family: 'Poppins', Arial, sans-serif; margin: 0; border: 0; padding: 0;">
   <!-- Start Spacebar Component -->
-  <table class="spacebar" cellpadding="0" cellspacing="0" border="0">
+  <table style="height: 8px; line-height: 0; border-collapse: collapse; width: 100%;" cellpadding="0" cellspacing="0" border="0">
     <tr>
       <td>
         &nbsp;
