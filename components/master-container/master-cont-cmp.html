@@ -92,6 +92,20 @@
   </style>
   <!-- Media Queries -->
   <style type="text/css">
+    @media all and (max-width:500px) {
+      .two-first-fields {
+        display: block;
+        clear: both;
+      }
+
+      .code-cell {
+        clear: both;
+        text-align: left;
+        padding: 32px 0 0 0 !important;
+        min-width: 100% !important;
+      }
+    }
+
     @media all and (max-width:719px) {
       .mobile-block {
         display: block !important;
@@ -129,8 +143,26 @@
       .titlebox-mobile-padding {
         padding-top: 32px !important;
       }
+
       .titlebox-remove-mbpadding {
         padding: 0 !important;
+      }
+
+      .destino-img-remove {
+        display: none !important;
+      }
+
+      .date-cell {
+        width: auto !important;
+      }
+
+      .infobar-divider-remove {
+        display: none;
+      }
+
+      .code-cell {
+        display: block !important;
+        width: 100% !important;
       }
     }
   </style>
@@ -200,7 +232,7 @@
     }
   </script> -->
   <div>&nbsp;</div>
-  <table class="email-wrapper" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+  <table class="email-wrapper" align="center" border="0" cellpadding="0" cellspacing="0"
     style="padding: 5px 0 0 0;max-width: 800px;">
     <tr>
       <td>
@@ -213,7 +245,7 @@
                 <tr>
                   <td class="header-logo-padding" style="padding: 32px 32px 0;">
                     <!-- Start Replace Header Logo -->
-                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; ">
+                    <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; ">
                       <tbody>
                         <tr>
                           <td style="width: 100%; height:45px;">
@@ -243,14 +275,15 @@
                   <!-- Fix en este Padding para spacing interno del componente (Title Box - Prep email) -->
                   <td class="mobile-padding" style="background-color: #0032A0; padding: 0 32px">
                     <!-- Start Replace Header -->
-                    <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                    <table border="0" cellpadding="0" cellspacing="0"
                       style="width:100%; color: #FFFFFF;">
                       <tr>
                         <td class="titlebox-remove-mbpadding" style="width: 100%; padding: 0 40px;">
                           <!-- Start TitleBox Cmp -->
-                          <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                          <table border="0" cellpadding="0" cellspacing="0" >
                             <tr>
-                              <td style="word-break: break-word; padding: 48px 0 24px; height: 60px;" class="titlebox-mobile-padding">
+                              <td style="word-break: break-word; padding: 48px 0 24px; height: 60px;"
+                                class="titlebox-mobile-padding">
                                 <p
                                   style="margin: 0; font-weight: 700; font-size: 32px; line-height: 40px;font-family: Gilroy, Helvetica, Arial, sans-serif;">
                                   Disfruta nuestra experiencia abordo
@@ -264,16 +297,16 @@
                           </table>
                           <!-- End TitleBox Cmp -->
                           <!-- Start InfoBar Cmp -->
-                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:80%">
+                          <table border="0" cellpadding="0" cellspacing="0" style="width:80%">
                             <tr>
                               <td class="two-first-fields">
-                                <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                <table align="left" border="0" cellpadding="0" cellspacing="0" 
                                   style="width: 100%;">
                                   <tr>
                                     <td class="info-mobile" style="width: 180px;">
-                                      <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                      <table border="0" cellpadding="0" cellspacing="0" >
                                         <tr>
-                                          <td style="padding-right: 16px;" class="city-image">
+                                          <td style="padding-right: 16px;" class="destino-img-remove">
                                             <div
                                               style="border: 1px solid #0032A0;width: 52px;height: 52px;border-radius: 50%;padding: 1px;margin: 0 auto;"
                                               class="no-border">
@@ -296,8 +329,8 @@
                                         </tr>
                                       </table>
                                     </td>
-                                    <td style="padding: 8px 32px; width: 50px;" class="divider-vertical-line">
-                                      <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                    <td style="padding: 8px 32px; width: 50px;" class="infobar-divider-remove">
+                                      <table border="0" cellpadding="0" cellspacing="0" 
                                         width="100%">
                                         <tr>
                                           <td style="border-left: 1px solid #CCCCCB;width: 1px;height: 32px;">
@@ -314,8 +347,8 @@
                                         Mar&nbsp;&#8203;,18&nbsp;&#8203;Sep
                                       </p>
                                     </td>
-                                    <td style="padding: 8px 32px; width: 50px;" class="divider-vertical-line">
-                                      <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                    <td style="padding: 8px 32px; width: 50px;" class="infobar-divider-remove">
+                                      <table border="0" cellpadding="0" cellspacing="0" 
                                         width="100%">
                                         <tr>
                                           <td style="border-right: 1px solid #CCCCCB;width: 1px;height: 32px;">
@@ -341,20 +374,21 @@
                         </td>
                       </tr>
                     </table>
-                    <!-- SpaceBar Cmp -->
-                    <table style="height: 48px; line-height: 0; border-collapse: collapse; width: 100%;" cellpadding="0" cellspacing="0" border="0">
-                      <!-- Height debe ser dinamico para que el componente sea reutilizable -->
-                      <tr>
-                        <td>
-                          &nbsp;
-                        </td>
-                      </tr>
-                    </table>
                     <!-- End Replace Header -->
                   </td>
                 </tr>
               </table>
               <!-- End Header Info  -->
+              <!-- SpaceBar Cmp -->
+              <table style="height: 48px; line-height: 0; border-collapse: collapse; width: 100%;" cellpadding="0"
+                cellspacing="0" border="0">
+                <!-- Height debe ser dinamico para que el componente sea reutilizable -->
+                <tr>
+                  <td>
+                    &nbsp;
+                  </td>
+                </tr>
+              </table>
             </td>
           </tr>
         </table>
