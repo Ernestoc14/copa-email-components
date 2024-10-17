@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
   xmlns:o="urn:schemas-microsoft-com:office:office">
@@ -101,10 +100,59 @@
       .card-logo {
         margin-right: 0 !important;
       }
+
+      .copa-logo-width {
+        margin-right: 0 !important;
+        width: 116px !important;
+      }
+
+      .header-logo-padding {
+        padding: 24px 16px 0 !important;
+      }
+
+      .mobile-padding {
+        padding: 0 16px !important;
+      }
+
+      .title-info-reorder {
+        display: block !important;
+      }
+
+      .remove-span-info {
+        display: none !important;
+      }
+
+      .title-mobile-padding {
+        padding-bottom: 4px !important;
+      }
+
+      .titlebox-mobile-padding {
+        padding-top: 32px !important;
+      }
+
+      .titlebox-remove-mbpadding {
+        padding: 0 !important;
+      }
     }
   </style>
-  <!-- CSS General Classes -->
+  <!-- CSS Classes -->
   <style type="text/css">
+    .title-info-flight {
+      font-weight: 400;
+      font-size: 14px;
+      color: #FFFFFF;
+      font-family: SuisseIntl, Helvetica, Arial, sans-serif;
+      margin: 0;
+      margin-bottom: 5px;
+    }
+
+    .subtitle-info-flight {
+      font-size: 20px;
+      font-weight: 700;
+      color: #FFFFFF;
+      font-family: Gilroy, Helvetica, Arial, sans-serif;
+      margin: 0;
+    }
   </style>
   <!--[if mso]>
         <style type="text/css">
@@ -121,36 +169,6 @@
 
 <body
   style="margin: 0;padding: 0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;font-family: SuisseIntl,Helvetica, Arial, sans-serif;">
-    <!-- Lenguaje de marcado (markup) de Gmail -->
-    <!-- <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "FlightReservation",
-      "reservationNumber": "{{RXJ34P}}",
-      "reservationStatus": "http://schema.org/Confirmed",
-      "reservationFor": {
-        "@type": "Flight",
-        "flightNumber": "{{CM123}}",
-        "airline": {
-          "@type": "Airline",
-          "name": "Copa Airlines",
-          "iataCode": "CM"
-        },
-        "departureAirport": {
-          "@type": "Airport",
-          "name": "{{San Francisco Airport}}",
-          "iataCode": "{{SFO}}"
-        },
-        "departureTime": "{{2027-03-04T20:15:00-08:00}}",
-        "arrivalAirport": {
-          "@type": "Airport",
-          "name": "{{John F. Kennedy International Airport}}",
-          "iataCode": "{{JFK}}"
-        },
-        "arrivalTime": "{{2027-03-05T06:30:00-05:00}}"
-      }
-    }
-    </script> -->
   <!-- Tarjeta adaptable de Outlook -->
   <!-- <script type="application/adaptivecard+json">
     {
@@ -183,28 +201,22 @@
     }
   </script> -->
   <div>&nbsp;</div>
-  <table class="email-wrapper" align="center" border="0" cellpadding="0" cellspacing="0"
+  <table class="email-wrapper" align="center" border="0" cellpadding="0" cellspacing="0" 
     style="padding: 5px 0 0 0;max-width: 800px;">
     <tr>
       <td>
         <!-- Start Header Wrapper Blue BG -->
-        <table border="0" cellpadding="0" cellspacing="0"
-          style="background-color: #0032A0; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+        <table border="0" cellpadding="0" cellspacing="0" style="background-color: #0032A0; border-top-left-radius: 8px; border-top-right-radius: 8px;">
           <tr>
             <td>
               <!-- Start Header Logo -->
               <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%;min-width:100%;">
                 <tr>
                   <td class="header-logo-padding" style="padding: 32px 32px 0;">
-                    <!-- Start Replace Header Component -->
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%;min-width:100%;">
-                      <tr>
-                        <td style="color: white; padding-bottom: 20px;">
-                          Header Logo/Images Section - Estilos dependen del Header Component Variant
-                        </td>
-                      </tr>
-                    </table>
-                    <!-- End Replace Header Component -->
+                    <!-- Start Replace Header Logo -->
+                    <!-- Header Component -->
+                    
+                    <!-- End Replace Header Logo -->
                   </td>
                 </tr>
               </table>
@@ -214,17 +226,15 @@
                 <tr>
                   <!-- Fix en este Padding para spacing interno del componente (Title Box - Prep email) -->
                   <td class="mobile-padding" style="background-color: #0032A0; padding: 0 32px">
-                    <!-- Start Replace Header Info Component -->
+                    <!-- Start Replace Header -->
                     <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%;min-width:100%;">
                       <tr>
                         <td style="color: white;">
-                          Header Section No tiene estilos - El Master Container tomara el width del contenido dentro del
-                          mismo teniendo
-                          como maximo 800 px.
+                          Header Section - El Master Container tomara el width del contenido dentro del mismo teniendo como maximo 800 px.
                         </td>
                       </tr>
                     </table>
-                    <!-- End Replace Header Info Component -->
+                    <!-- End Replace Header -->
                   </td>
                 </tr>
               </table>
@@ -241,7 +251,7 @@
               <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%;min-width:100%;">
                 <tr>
                   <td class="mobile-padding" style="padding: 0 48px">
-                    Body Section Tomara tamano del Children
+                    Body Section
                   </td>
                 </tr>
               </table>
@@ -253,13 +263,13 @@
         <!-- Start Footer -->
         <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%;min-width:100%;">
           <tr>
-            <td
-              style="padding: 32px 0;background-color:#EFEFEE; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;">
+            <td class="mobile-padding"
+              style="padding: 32px 56px;background-color:#EFEFEE;border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;">
               <!-- Start Replace Footer -->
               <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%;min-width:100%;">
                 <tr>
-                  <td class="mobile-padding" style="padding: 0 48px">
-                    Footer Section Tomara tamano del Children
+                  <td>
+                    Footer Section
                   </td>
                 </tr>
               </table>
