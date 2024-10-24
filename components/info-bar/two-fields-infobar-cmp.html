@@ -123,16 +123,13 @@
       }
     }
 
+    /* 719 o 599 px MQs */
     @media all and (max-width:719px) {
       .date-cell {
         width: auto !important;
       }
 
-      .destino-img-remove {
-        display: none;
-      }
-
-      .infobar-divider-remove {
+      .remove-item-mobile {
         display: none;
       }
 
@@ -148,7 +145,35 @@
         padding-bottom: 16px;
         max-width: 100%;
       }
+
+      .reorder-mobile-table {
+        width: 375px !important;
+      }
+      .reorder-mobile-table td:not(.no-reorder) {
+        display: block !important;
+        width: 375px !important;
+      }
+
+      .info-mobile-reorder {
+        display: block !important;
+      }
     }
+
+    @media all and (max-width:360px) {
+      .reorder-mobile-table {
+        width: 280px !important;
+      }
+
+      .reorder-mobile-table td:not(.no-reorder) {
+        display: block !important;
+        width: 280px !important;
+      }
+
+      .info-mobile-padding {
+        padding-bottom: 24px;
+      }
+    }
+
   </style>
   <style type="text/css">
     .title-info-flight {
@@ -158,6 +183,7 @@
       font-family: SuisseIntl, Helvetica, Arial, sans-serif;
       margin: 0;
       margin-bottom: 5px;
+      white-space: nowrap;
     }
 
     .subtitle-info-flight {
@@ -166,6 +192,7 @@
       color: #333333;
       font-family: Gilroy, Helvetica, Arial, sans-serif;
       margin: 0;
+      white-space: nowrap;
     }
   </style>
 </head>
@@ -175,14 +202,14 @@
     <tr>
       <td style="padding: 48px 32px;" class="">
         <!-- Start Infobar Cmp -->
-        <table cellpadding="0" cellspacing="0" border="0"
+        <table cellpadding="0" cellspacing="0" border="0" class="reorder-mobile-table"
           style="margin: 0;width: 80%; border-collapse: collapse;">
           <tr>
             <!-- Start Image -->
             <td style="width: 52px;">
-              <table >
+              <table>
                 <tr>
-                  <td style="padding-right: 16px;" class="destino-img-remove">
+                  <td style="padding-right: 16px;" class="remove-item-mobile no-reorder">
                     <div
                       style="border: 1px solid #0032A0;width: 52px;height: 52px;border-radius: 50%;padding: 1px;margin: 0 auto;"
                       class="no-border">
@@ -195,65 +222,47 @@
               </table>
             </td>
             <!-- End Image -->
-            <td>
-              <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
-                <tr>
-                  <td class="title-info-flight">
-                    Destination:
-                  </td>
-                </tr>
-                <tr>
-                  <td class="subtitle-info-flight" style="white-space: nowrap;">
-                    Santiago de los Caballeros
-                  </td>
-                </tr>
-              </table>
+            <td class="info-mobile-padding">
+              <span class="title-info-flight info-mobile-reorder">
+                Destination:
+              </span>
+              <span class="subtitle-info-flight info-mobile-reorder">
+                Santiago de los Caballeros
+              </span>
             </td>
-            <td style="padding: 0 32px; width: 1px;">
+            <td style="padding: 0 32px; width: 1px;" class="no-reorder remove-item-mobile">
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
-                  <td style="border-right: 1px solid #CCCCCB;width: 1px;height: 24px;">
+                  <td style="border-right: 1px solid #CCCCCB;width: 1px;height: 24px;" class="remove-item-mobile">
                     &nbsp;
                   </td>
                 </tr>
               </table>
             </td>
-            <td>
-              <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
-                <tr>
-                  <td class="title-info-flight" >
-                    Date:
-                  </td>
-                </tr>
-                <tr>
-                  <td class="subtitle-info-flight" style="white-space: nowrap;" >
-                    Mar&nbsp;&#8203;,18&nbsp;&#8203;Sep
-                  </td>
-                </tr>
-              </table>
+            <td class="info-mobile-padding">
+              <span class="title-info-flight info-mobile-reorder">
+                Date:
+              </span>
+              <span class="subtitle-info-flight info-mobile-reorder">
+                Mar&nbsp;&#8203;,18&nbsp;&#8203;Sep
+              </span>
             </td>
-            <td style="padding: 0 32px; width: 1px;">
+            <td style="padding: 0 32px; width: 1px;" class="no-reorder remove-item-mobile">
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
-                  <td style="border-right: 1px solid #CCCCCB;width: 1px;height: 24px;">
+                  <td style="border-right: 1px solid #CCCCCB;width: 1px;height: 24px;" class="remove-item-mobile">
                     &nbsp;
                   </td>
                 </tr>
               </table>
             </td>
-            <td>
-              <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
-                <tr>
-                  <td class="title-info-flight" style="white-space: nowrap;" >
-                    Código de reserva:
-                  </td>
-                </tr>
-                <tr>
-                  <td class="subtitle-info-flight" >
-                    EBXGHT
-                  </td>
-                </tr>
-              </table>
+            <td class="info-mobile-padding no-reorder">
+              <span class="title-info-flight info-mobile-reorder">
+                Código de reserva:
+              </span>
+              <span class="subtitle-info-flight info-mobile-reorder">
+                EBXGHT
+              </span>
             </td>
           </tr>
         </table>
