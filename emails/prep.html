@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+    xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if mso]>
+      <xml>
+         <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+         </o:OfficeDocumentSettings>
+      </xml>
+      <![endif]-->
+    <style type="text/css">
+        @font-face {
+            font-family: "Suisse Intl Light";
+            src: url("https://www.copaair.com/webassets/fonts/suisse/SuisseIntl-Light-WebS.eot");
+            src: url("https://www.copaair.com/webassets/fonts/suisse/SuisseIntl-Light-WebS.woff") format("woff"),
+                url("https://www.copaair.com/webassets/fonts/suisse/SuisseIntl-Light-WebS.woff2") format("woff2"),
+                url("https://www.copaair.com/webassets/fonts/suisse/SuisseIntl-Light-WebS.ttf") format("truetype"),
+                url("https://www.copaair.com/webassets/fonts/suisse/SuisseIntl-Light-WebS.svg") format("svg");
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "Suisse Intl";
+            src: url("https://www.copaair.com/webassets/fonts/suisse/SuisseIntl-Regular-WebS.eot");
+            src: url("https://www.copaair.com/webassets/fonts/suisse/SuisseIntl-Regular-WebS.woff") format("woff"),
+                url("https://www.copaair.com/webassets/fonts/suisse/SuisseIntl-Regular-WebS.woff2") format("woff2"),
+                url("https://www.copaair.com/webassets/fonts/suisse/SuisseIntl-Regular-WebS.ttf") format("truetype"),
+                url("https://www.copaair.com/webassets/fonts/suisse/SuisseIntl-Regular-WebS.svg") format("svg");
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "Suisse Intl Medium";
+            src: url("https://www.copaair.com/webassets/fonts/suisse/SuisseIntl-Medium-WebS.eot");
+            src: url("https://www.copaair.com/webassets/fonts/suisse/SuisseIntl-Medium-WebS.woff") format("woff"),
+                url("https://www.copaair.com/webassets/fonts/suisse/SuisseIntl-Medium-WebS.woff2") format("woff2"),
+                url("https://www.copaair.com/webassets/fonts/suisse/SuisseIntl-Medium-WebS.ttf") format("truetype"),
+                url("https://www.copaair.com/webassets/fonts/suisse/SuisseIntl-Medium-WebS.svg") format("svg");
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "Suisse Intl Semi Bold";
+            src: url("https://www.copaair.com/webassets/fonts/suisse/SuisseIntl-SemiBold-WebS.eot");
+            src: url("https://www.copaair.com/webassets/fonts/suisse/SuisseIntl-SemiBold-WebS.woff") format("woff"),
+                url("https://www.copaair.com/webassets/fonts/suisse/SuisseIntl-SemiBold-WebS.woff2") format("woff2"),
+                url("https://www.copaair.com/webassets/fonts/suisse/SuisseIntl-SemiBold-WebS.ttf") format("truetype"),
+                url("https://www.copaair.com/webassets/fonts/suisse/SuisseIntl-SemiBold-WebS.svg") format("svg");
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'gilroy-regular';
+            src: url('https://www.copaair.com/webassets/fonts/gilroy/gilroy-regular-webfont.woff2') format('woff2'),
+                url('https://www.copaair.com/webassets/fonts/gilroy/gilroy-regular-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'gilroy-bold';
+            src: url('https://www.copaair.com/webassets/fonts/gilroy/gilroy-bold-webfont.woff2') format('woff2'),
+                url('https://www.copaair.com/webassets/fonts/gilroy/gilroy-bold-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+    <style>
+        a {
+            text-decoration: none !important;
+        }
+
+        #MessageViewBody a {
+            color: inherit;
+            text-decoration: none;
+            font-size: inherit;
+            font-family: inherit;
+            font-weight: inherit;
+            line-height: inherit;
+        }
+
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+    </style>
+    <style type="text/css">
+        table,
+        td,
+        div,
+        h1,
+        p {
+            font-family: 'Suisse Intl', Helvetica, Arial, sans-serif;
+        }
+    </style>
+    <style type="text/css">
+        .pax-card-pair {
+            padding-right: 8px;
+            max-width: 50%;
+        }
+    </style>
+    <style type="text/css">
+        @media all and (max-width: 374px) {
+            .vertical-divider {
+                display: none;
+            }
+
+            .new-flight-info {
+                display: block;
+                padding-bottom: 24px !important;
+            }
+        }
+    </style>
+    <style type="text/css">
+        @media all and (max-width: 580px) {
+            .app-content {
+                display: inline-block;
+                padding: 32px 32px 17px 32px !important;
+            }
+
+            .app-c-text {
+                padding: 0 !important;
+            }
+
+            .app-icon-dis {
+                text-align: center !important;
+            }
+
+            .app-icons-table {
+                width: 100% !important;
+            }
+
+            .app-icons {
+                display: inline-block;
+                padding-bottom: 0 !important;
+            }
+
+            .app-img {
+                display: inline-block;
+                width: 100%;
+                padding: 17px 0 0 !important;
+            }
+
+            .frame-cell-desktop {
+                display: none !important;
+            }
+
+            .frame-cell-mobile {
+                display: block !important;
+                width: 100% !important;
+            }
+
+            .main-title {
+                font-size: 20px !important;
+                line-height: 32px !important;
+            }
+        }
+    </style>
+    <style type="text/css">
+        @media all and (max-width:700px) {
+            .pax-card-pair {
+                padding-right: 0 !important;
+                display: block;
+                clear: both;
+                padding-bottom: 16px;
+                max-width: 100%;
+            }
+
+
+        }
+    </style>
+    <style type="text/css">
+        @media all and (max-width: 480px) {
+            .mobile-padding {
+                padding-right: 16px !important;
+                padding-left: 16px !important;
+            }
+
+            .horiztonal-line {
+                padding-right: 16px !important;
+                padding-left: 16px !important;
+            }
+
+            .new-flight-info {
+                padding-bottom: 24px !important;
+            }
+        }
+
+        @media all and (max-width: 630px) {
+            .mobile-padding-2 {
+                padding-bottom: 24px !important;
+            }
+        }
+    </style>
+    <style type="text/css">
+        @media all and (max-width: 805px) {
+            .mobile-padding {
+                padding-right: 32px !important;
+                padding-left: 32px !important;
+            }
+        }
+
+        @media all and (max-width: 745px) {
+            .vertical-divider {
+                padding: 0 16px 0 16px !important;
+            }
+        }
+
+        @media all and (max-width: 630px) {
+            .vertical-divider {
+                display: none;
+            }
+
+            .new-flight-info-btn {
+                display: block;
+            }
+
+            .new-flight-info {
+                display: block;
+                padding-bottom: 16px;
+            }
+
+            .new-flight-container {
+                width: 100% !important;
+            }
+
+            .welcome-btn-container {
+                width: 100% !important;
+            }
+        }
+    </style>
+    <style type="text/css">
+        @media all and (max-width: 580px) {
+
+            .mobile-padding,
+            .horiztonal-line {
+                padding-right: 16px !important;
+                padding-left: 16px !important;
+            }
+        }
+    </style>
+    <style type="text/css">
+        @media all and (max-width: 580px) {
+            .copa-airlines-logo {
+                width: 117px !important;
+            }
+
+            .connect-miles-logo {
+                width: 125px !important;
+            }
+
+            .horiztonal-line p {
+                margin-top: 10px !important;
+            }
+        }
+    </style>
+    <style type="text/css">
+        .status-bg-without-status {
+            background-color: #D6E3FF;
+        }
+
+        .status-line-without-status {
+            border: 1px solid #D6E3FF;
+        }
+
+        .status-bg-member-status {
+            background-color: #0032A0;
+        }
+
+        .status-line-member-status {
+            border: 1px solid #0032A0;
+        }
+
+        .status-bg-silver-status {
+            background-color: #062660;
+        }
+
+        .status-line-silver-status {
+            border: 1px solid #062660;
+        }
+
+        .status-bg-gold-status {
+            background-color: #8D7249;
+        }
+
+        .status-line-gold-status {
+            border: 1px solid #8D7249;
+        }
+
+        .status-bg-platinum-status {
+            background-color: #666666;
+        }
+
+        .status-line-platinum-status {
+            border: 1px solid #666666;
+        }
+
+        .status-bg-presidential-status {
+            background-color: #121212;
+        }
+
+        .status-line-presidential-status {
+            border: 1px solid #121212;
+        }
+
+        .status-color-without-status {
+            color: #0032A0;
+        }
+
+        .status-color-all-status {
+            color: #F9F9F8;
+        }
+
+        @media (max-width: 660px) {
+            .column-align {
+                display: block !important;
+            }
+
+            .gotturi-img-mobile {
+                display: block !important;
+                width: 100%;
+                height: auto !important;
+            }
+
+            .gotturi-img {
+                display: none !important;
+            }
+
+            .mobile-padding-mytrips {
+                padding: 32px !important;
+            }
+
+            .beneficios-1 {
+                padding: 16px !important;
+            }
+
+            .beneficios-2 {
+                padding: 0 16px !important;
+            }
+
+            .beneficios-3 {
+                padding: 16px !important;
+            }
+
+            .info-adicional-padding {
+                padding: 0 16px 40px !important;
+            }
+
+            .baggage-mobile-padding {
+                padding-top: 16px !important;
+                padding-bottom: 16px !important;
+            }
+
+            .btn-blue {
+                display: block !important;
+                width: 100% !important;
+                padding: 10px 0 !important;
+                max-width: none !important;
+                min-width: 100% !important;
+            }
+
+            .btn-table {
+                width: 100%;
+            }
+        }
+    </style>
+    <!--[if mso]>
+      <style>
+         .outlook-status-td {
+         display: none !important;
+         }
+         .outlook-flight-details {
+         height: 88px !important;
+         width: 90%;
+         }
+         .outlook-reset-padding {
+         padding: 24px 10px !important;  
+         }
+         .outlook-gap p {
+         margin: 0 0 8px 0
+         }
+      </style>
+      <![endif]-->
+    <!--[if mso]>
+      <style type="text/css">
+         body, table, td, p, div, a, span {font-family: Arial, sans-serif !important;}
+      </style>
+      <![endif]-->
+</head>
+
+<body
+    style="margin: 0;padding: 0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;font-family: 'Suisse Intl',Helvetica, Arial, sans-serif;background-color: #F9F9F8;">
+    <!--[if mso | IE]>
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+         <tr>
+            <td height="NaN" style="vertical-align:top;height:undefined;">
+               <![endif]-->
+    &nbsp;
+    <!--[if mso | IE]>
+            </td>
+         </tr>
+      </table>
+      <![endif]-->
+    <!-- Email wrapper begin -->
+    <!--[if mso | IE]>
+      <table align="center" border="0" cellpadding="0" cellspacing="0" class="copa-email-wrapper-outlook" style="width:800px;" width="800">
+      <tr>
+         <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+            <![endif]-->
+    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+        style="padding: 5px 0 0 0;max-width: 800px;">
+        <tr>
+            <td style="background-color: #0032A0;border-radius: 8px 8px 0 0;">
+                <table style="width: 100%;" role="presentation">
+                    <tr>
+                        <td class="mobile-padding"
+                            style="padding: 32px 32px 0 32px;border-radius: 8px 8px 0 0;border-spacing: 0;">
+                            <table role="presentation"
+                                style="width: 100%;border-radius: 8px 8px 0 0;border-collapse: collapse;">
+                                <tr>
+                                    <td>
+                                        <img class="copa-airlines-logo"
+                                            src="https://www.copaair.com/webassets/images/copa-logo-white.png" alt=""
+                                            width="176" style="width: 176px;vertical-align: bottom;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-collapse: collapse;">
+                            <table role="presentation" style="width: 100%;border-collapse: collapse;">
+                                <tr>
+                                    <td class="horiztonal-line"
+                                        style="padding: 0 32px 0 32px;border-collapse: collapse;">
+                                        <p
+                                            style="border-top: solid 1px #667EB5;font-size: 1px;margin-top: 24px;width: 100%;display: block;">
+                                            &nbsp;
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="mobile-padding mobile-padding-2" style="padding: 48px 64px 48px 64px;">
+                            <table role="presentation">
+                                <tr>
+                                    <td class="main-title"
+                                        style="font-family: Gilroy, Helvetica, Arial, sans-serif;font-size: 32px;font-style: normal;font-weight: 700;line-height: 40px;color: #ffffff;letter-spacing: -0.5px;padding: 0 0 24px 0;">
+                                        Details of your trip to [Destination]. </td>
+                                </tr>
+                                <tr>
+                                    <td
+                                        style="font-family: 'Suisse Intl', Helvetica, sans-serif;font-size: 16px;font-style: normal;font-weight: 400;line-height: 24px;color: #ffffff;padding-bottom: 24px;">
+                                        Thank you for contacting the Copa Airlines Call Center. Below is some valuable
+                                        information that we hope you will find useful.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table class="new-flight-container" border="0" cellpadding="0" cellspacing="0"
+                                            role="presentation">
+                                            <tr>
+                                                <th class="new-flight-info" align="left">
+                                                    <p
+                                                        style="font-family: 'Suisse Intl', Helvetica, sans-serif;margin: 0;font-size: 14px;font-style: normal;font-weight: 400;line-height: 20px;color: #ffffff;text-wrap: nowrap;">
+                                                        Reservation Code:
+                                                    </p>
+                                                    <p
+                                                        style="margin: 0;font-family: Gilroy, Helvetica, Arial, sans-serif;font-size: 20px;font-style: normal;font-weight: 700;line-height: 32px;color: #ffffff;">
+                                                        EBXGHT
+                                                    </p>
+                                                </th>
+                                                <th class="vertical-divider" style="padding: 0 40px;">
+                                                    <table>
+                                                        <tr>
+                                                            <td style="border-right: 1px solid #667AA5;height: 29px;">
+                                                                &nbsp;</td>
+                                                        </tr>
+                                                    </table>
+                                                </th>
+                                                <th class="new-flight-info" align="left">
+                                                    <p
+                                                        style="font-family: 'Suisse Intl', Helvetica, sans-serif;margin: 0;font-size: 14px;font-style: normal;font-weight: 400;line-height: 20px;color: #ffffff;text-wrap: nowrap;">
+                                                        Date of travel:
+                                                    </p>
+                                                    <p
+                                                        style="margin: 0;font-family: gilroy, Helvetica, Arial, sans-serif;font-size: 20px;font-style: normal;font-weight: 700;line-height: 32px;color: #ffffff;">
+                                                        <a style="color: #ffffff;">Feb 15, 2024</a>
+                                                    </p>
+                                                </th>
+                                                <th class="vertical-divider" style="padding: 0 40px;">
+                                                    <table>
+                                                        <tr>
+                                                            <td style="border-right: 1px solid #667AA5;height: 29px;">
+                                                                &nbsp;</td>
+                                                        </tr>
+                                                    </table>
+                                                </th>
+                                                <th class="new-flight-info" align="left">
+                                                    <p
+                                                        style="font-family: 'Suisse Intl', Helvetica, sans-serif;margin: 0;font-size: 14px;font-style: normal;font-weight: 400;line-height: 20px;color: #ffffff;text-wrap: nowrap;">
+                                                        Ticket Status:
+                                                    </p>
+                                                    <p
+                                                        style="margin: 0;font-family: gilroy, Helvetica, Arial, sans-serif;font-size: 20px;font-style: normal;font-weight: 700;line-height: 32px;color: #ffffff;">
+                                                        <a style="color: #ffffff;">[Confirmation status]</a>
+                                                    </p>
+                                                </th>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="mobile-padding" style="padding: 40px 64px;background-color: #ffffff;">
+                <!-- Mytrips baner-->
+                <table align="center" cellspacing="0" cellpadding="0"
+                    style="padding:0px;width: 100%;border: 1px solid #CCCCCB;border-radius: 16px;border-collapse: collapse;border-spacing: 0;display: block;margin: 0 auto;">
+                    <tr>
+                        <th class="column-align" style="padding: 0px;">
+                            <!--[if mso]>
+                        <img class="gotturi-img" src="https://www.copaair.com/webassets/images/737-max-csaas-email-mso.png" style="padding: 0;border-radius: 8px 0 0 8px;display: block;height: 160px" width="309" height="160" alt="Copa Airlines Airplane">
+                        <![endif]-->
+                            <!--[if !mso]><!-->
+                            <img class="gotturi-img"
+                                src="https://www.copaair.com/webassets/images/737-max-csaas-email.png"
+                                style="border-radius: 8px 0 0 8px;display: block;height: 160px" width="309"
+                                alt="Copa Airlines Airplane">
+                            <img class="gotturi-img-mobile"
+                                src="https://www.copaair.com/webassets/images/737-max-csaas-email-mso.png"
+                                style="border-radius: 16px 16px 0 0;display:none" width="343"
+                                alt="Copa Airlines Airplane">
+                            <!--<![endif]-->
+                        </th>
+                        <th class="column-align mobile-padding-mytrips" align="left" style="padding: 0 24px;">
+                            <p
+                                style="text-align: left;font-family: 'gilroy', Arial, Helvetica, sans-serif;font-size: 16px;font-weight: 700;line-height: 24px;color: #333333;margin:0; padding-bottom: 8px">
+                                Manage your reservation in My Trips </p>
+                            <p
+                                style="text-align: left;font-size: 12px;font-style: normal;font-weight: 400;line-height: 16px;margin: 0 !important; color: #666666;padding-bottom: 24px;">
+                                Here you can choose or change your seats, view your travel itinerary or make changes to
+                                your reservation.
+                            </p>
+                            <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                <tr>
+                                    <th>
+                                        <p
+                                            style="text-align: left; margin:0;color: #0032A0;font-size: 12px;display: table;">
+                                            <a href="https://mytrips.copaair.com/" target="_blank"
+                                                style="color: #0032A0;text-decoration: none;display:table-cell;vertical-align:middle">
+                                                Go to My Trips
+                                            </a>
+                                        </p>
+                                    </th>
+                                    <th><a href="https://mytrips.copaair.com/" target="_blank"
+                                            style="display: block;height:24px"><img
+                                                src="https://www.copaair.com/assets/icon-keyboard-arrow.png"
+                                                alt="arrow"></a></th>
+                                </tr>
+                            </table>
+                        </th>
+                    </tr>
+                </table>
+                <!-- Finaliza - Imprime si tiene Stopover-->
+            </td>
+        </tr>
+        <!-- -->
+        <tr>
+            <td class="mobile-padding"
+                style="padding: 0px 64px 24px 64px;background-color: #ffffff;font-family: 'gilroy', Arial, Helvetica, sans-serif;font-size: 20px;font-weight: 700;line-height: 32px;color: #0032A0;">
+                Your reservation information
+            </td>
+        </tr>
+        <tr>
+            <td class="mobile-padding"
+                style="padding: 0px 64px 24px;background-color: #ffffff;font-family: 'gilroy', Arial, Helvetica, sans-serif;font-size: 16px;font-weight: 700;line-height: 24px;color: #333333;">
+                Fare Family
+            </td>
+        </tr>
+        <tr>
+            <td class="mobile-padding" style="padding: 4px 64px;background-color: #ffffff;">
+                <table align="center" cellspacing="0" cellpadding="0" role="presentation" style="width: 100%;">
+                    <tr>
+                        <td>
+                            <!-- Mytrips baner-->
+                            <table align="center" cellspacing="0" cellpadding="0"
+                                style="width: 100%;height: 104px;border-collapse: separate;border-radius: 8px;border: 1px solid #DBDAD8;background-color: #ffffff;">
+                                <tr>
+                                    <th class="column-align beneficios-1" style="padding: 16px;">
+                                        <img src="https://www.copaair.com/assets/ticket-rembolso.png"
+                                            style="display: block;" alt="Beneficios de tarifas">
+                                    </th>
+                                    <th class="column-align beneficios-2" style="padding:16px 16px 16px 0;">
+                                        <p
+                                            style="text-align: left;font-family: 'gilroy', Arial, Helvetica, sans-serif;font-size: 16px;font-weight: 700;line-height: 24px;color: #0032A0;margin:0; padding-bottom: 4px">
+                                            Learn about all the benefits of your fare
+                                        </p>
+                                        <p
+                                            style="text-align: left;font-size: 14px;font-style: normal;font-weight: 400;line-height: 20px;margin: 0 !important; color: #666666;">
+                                            Get detailed information about the benefits associated with your chosen fare
+                                            type.
+                                        </p>
+                                    </th>
+                                    <th class="column-align beneficios-3" style="padding:16px 16px 16px 0;">
+                                        <table class="btn-table" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <!--[if mso]>
+                                                               <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:40px;v-text-anchor:middle;width:131px;" arcsize="50%" stroke="false" fillcolor="#0032A0">
+                                                               <w:anchorlock/>
+                                                               <center style="">
+                                                               <![endif]-->
+
+                                                    <!-- IMPRIMIR SI ESCENARIO DE VUELO < 30 MIN -->
+                                                    <a class="btn-blue"
+                                                        href="https://www.copaair.com/en-gs/travel-information/fare-families/"
+                                                        style="font-family: 'gilroy-regular',Helvetica, Arial, sans-serif;;display: inline-block;color: #ffffff;background-color: #0032A0;border-radius: 40px;width: 131px;margin-bottom:0;text-align: center;padding: 10px 16px;font-size: 14px;line-height: 20px;font-weight: 500;vertical-align: middle;text-decoration: none;">View
+                                                        Benefits</a>
+                                                    <!-- -->
+
+                                                    <!--[if mso]>
+                                                               </center>
+                                                               </v:roundrect>
+                                                            <![endif]-->
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </th>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="mobile-padding"
+                style="padding: 36px 64px 24px;background-color: #ffffff;font-family: 'gilroy', Arial, Helvetica, sans-serif;font-size: 16px;font-weight: 700;line-height: 24px;color: #333333;">
+                Baggage Allowance </td>
+        </tr>
+        <tr>
+            <td class="mobile-padding" style="padding: 4px 64px;background-color: #ffffff;" colspan="2">
+                <table
+                    style="width: 100%;height: 128px;border-collapse: separate;border-radius: 8px;border: 1px solid #DBDAD8;padding: 14px;background-color: #ffffff;">
+                    <tbody>
+                        <tr>
+                            <td colspan="3"
+                                style="font-size: 14px;vertical-align: top;text-align: left;padding-bottom: 8px;">
+                                <p
+                                    style="color: #666666;border-bottom: 1px solid #CCCCCB;padding-bottom: 16px;width: 100%;margin: 0 auto;font-size: 12px;line-height:16px;font-weight:500;font-family: 'Suisse Intl',Helvetica, Arial, sans-serif;">
+                                    <span
+                                        style="font-family: 'Suisse Intl',Helvetica, Arial, sans-serif;font-size: 14px;font-weight: 700;line-height:20px;color:#333333">
+                                        To [Destination]</span> · [Económica Classic]
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="column-align baggage-check-table">
+                                <table>
+                                    <td>
+                                        <img src="https://www.copaair.com/webassets/images/notifications/Bag-blue.png"
+                                            width="32" style="margin-right: 8px;">
+                                    </td>
+                                    <td style="text-align: left;">
+                                        <p
+                                            style="margin:0;font-size: 12px;display: inline-block;text-align: left;font-weight: 700;line-height: 16px;color: #333333;">
+                                            1 Hold baggage</p>
+                                        <p
+                                            style="margin:0;display: block;padding-top: 4px;font-size: 12px;line-height: 16px;font-weight: 500;">
+                                            32 kg (50 lb) · 17 x 10 x 9 in</p>
+                                    </td>
+                                </table>
+                            </th>
+                            <th class="column-align baggage-check-table baggage-mobile-padding">
+                                <table>
+                                    <td>
+                                        <img src="https://www.copaair.com/webassets/images/notifications/Equipaje-de-mano.png"
+                                            width="32" style="margin-right: 8px;">
+                                    </td>
+                                    <td style="text-align: left;">
+                                        <p
+                                            style="margin:0;font-size: 12px;display: inline-block;text-align: left;font-weight: 700;line-height: 16px;color: #121212">
+                                            1 Carry-on baggage</p>
+                                        <p
+                                            style="margin:0;display: block;padding-top: 4px;font-size: 12px;line-height: 16px;font-weight: 500;">
+                                            10 kg (22 lb) · 17 x 10 x 9 in</p>
+                                    </td>
+                                </table>
+                            </th>
+                            <th class="column-align baggage-check-table">
+                                <table>
+                                    <td>
+                                        <img src="https://www.copaair.com/webassets/images/notifications/Articulo-personal.png"
+                                            width="32" style="margin-right: 8px;">
+                                    </td>
+                                    <td style="text-align: left;">
+                                        <p
+                                            style="margin:0;font-size: 12px;display: inline-block;text-align: left;font-weight: 700;line-height: 16px;color: #121212;">
+                                            1 Personal item</p>
+                                        <p
+                                            style="margin:0;display: block;padding-top: 4px;font-size: 12px;line-height: 16px;font-weight: 500;">
+                                            36 in (90 cm) · 17 x 10 x 9 in</p>
+                                    </td>
+                                </table>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="mobile-padding" style="padding: 20px 64px 0;background-color: #ffffff;" colspan="2">
+                <table
+                    style="width: 100%;height: 128px;border-collapse: separate;border-radius: 8px;border: 1px solid #DBDAD8;padding: 14px;background-color: #ffffff;">
+                    <tbody>
+                        <tr>
+                            <td colspan="3"
+                                style="font-size: 14px;vertical-align: top;text-align: left;padding-bottom: 8px;">
+                                <p
+                                    style="color: #666666;border-bottom: 1px solid #CCCCCB;padding-bottom: 16px;width: 100%;margin: 0 auto;font-size: 12px;line-height:16px;font-weight:500;font-family: 'Suisse Intl',Helvetica, Arial, sans-serif;">
+                                    <span
+                                        style="font-family: 'Suisse Intl',Helvetica, Arial, sans-serif;font-size: 14px;font-weight: 700;line-height:20px;color:#333333">Hacia
+                                        To [Destination]</span> · [Económica Classic]
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="column-align baggage-check-table">
+                                <table>
+                                    <td>
+                                        <img src="https://www.copaair.com/webassets/images/notifications/Bag-grey.png"
+                                            width="32" style="margin-right: 8px;">
+                                    </td>
+                                    <td style="text-align: left;">
+                                        <p
+                                            style="margin:0;font-size: 12px;display: inline-block;text-align: left;font-weight: 700;line-height: 16px;color: #666666;">
+                                            0 Hold baggage</p>
+                                        <p
+                                            style="margin:0;display: block;padding-top: 4px;font-size: 12px;line-height: 16px;font-weight: 500;color: #666666;">
+                                            32 kg (50 lb) · 17 x 10 x 9 in</p>
+                                    </td>
+                                </table>
+                            </th>
+                            <th class="column-align baggage-check-table baggage-mobile-padding">
+                                <table>
+                                    <td>
+                                        <img src="https://www.copaair.com/webassets/images/notifications/Equipaje-de-mano.png"
+                                            width="32" style="margin-right: 8px;">
+                                    </td>
+                                    <td style="text-align: left;">
+                                        <p
+                                            style="margin:0;font-size: 12px;display: inline-block;text-align: left;font-weight: 700;line-height: 16px;color: #121212">
+                                            1 Carry-on baggage</p>
+                                        <p
+                                            style="margin:0;display: block;padding-top: 4px;font-size: 12px;line-height: 16px;font-weight: 500;">
+                                            10 kg (22 lb) · 17 x 10 x 9 in</p>
+                                    </td>
+                                </table>
+                            </th>
+                            <th class="column-align baggage-check-table">
+                                <table>
+                                    <td>
+                                        <img src="https://www.copaair.com/webassets/images/notifications/Articulo-personal.png"
+                                            width="32" style="margin-right: 8px;">
+                                    </td>
+                                    <td style="text-align: left;">
+                                        <p
+                                            style="margin:0;font-size: 12px;display: inline-block;text-align: left;font-weight: 700;line-height: 16px;color: #121212;">
+                                            1 Personal item</p>
+                                        <p
+                                            style="margin:0;display: block;padding-top: 4px;font-size: 12px;line-height: 16px;font-weight: 500;">
+                                            36 in (90 cm) · 17 x 10 x 9 in</p>
+                                    </td>
+                                </table>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="mobile-padding"
+                style="padding: 24px 64px 0px;background-color: #ffffff;font-family: 'Suisse Intl',Helvetica, Arial, sans-serif;font-size: 14px;font-weight: 400;line-height: 20px;color: #666666;">
+                Baggage may be subject to additional charges for overweight or oversized baggage. For more information,
+                please refer to Copa Airlines' <a style="color: #0E68FF;text-decoration: none;"
+                    href="https://www.copaair.com/en-gs/legal/terms-and-conditions/terms-conditions-prepaid-bags/"
+                    target="_blank">prepaid baggage terms and conditions</a> and <a
+                    style="color: #0E68FF;text-decoration: none;"
+                    href="https://www.copaair.com/en-gs/travel-information/baggage-information/" target="_blank">baggage
+                    policy.</a>
+            </td>
+        <tr style="border-spacing:0;border:0;padding:0;">
+            <td class="mobile-padding"
+                style="border-spacing:0;border:0;padding: 40px 64px 24px;background-color: #ffffff;font-family: 'gilroy', Arial, Helvetica, sans-serif;font-size: 16px;font-weight: 700;line-height: 24px;color: #333333;">
+                Additional Information
+            </td>
+        </tr>
+        <tr style="border-spacing:0;border:0;padding:0;">
+            <td class="info-adicional-padding"
+                style="border-spacing:0;border:0;padding: 0px 64px 40px;background-color: #ffffff;">
+                <table>
+                    <tr>
+                        <td style="padding-bottom: 24px;">
+                            <table>
+                                <tr>
+                                    <td width="48" style="vertical-align: top;padding-right: 16px;">
+                                        <img width="40" src="https://www.copaair.com/webassets/images/bebe-icon.png"
+                                            alt="">
+                                    </td>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <td
+                                                    style="font-family: 'Suisse Intl',Helvetica, Arial, sans-serif;font-size: 14px;font-style: normal;font-weight: 700;line-height: 20px;color: #333333;padding: 0 0 8px 0;">
+                                                    Traveling with Infants
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td
+                                                    style="font-family: 'Suisse Intl',Helvetica, Arial, sans-serif;font-size: 14px;font-style: normal;font-weight: 400;line-height: 20px;color: #666666;">
+                                                    Learn more on our <a style="color: #0E68FF;text-decoration: none;"
+                                                        href="https://www.copaair.com/en-gs/travel-information/special-assistance/traveling-with-infants/"
+                                                        target="_blank">Traveling with Infants page.</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom: 24px;">
+                            <table>
+                                <tr>
+                                    <td width="48" style="vertical-align: top;padding-right: 16px;">
+                                        <img width="40" src="https://www.copaair.com/webassets/images/mascotas-icon.png"
+                                            alt="">
+                                    </td>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <td
+                                                    style="font-family: 'Suisse Intl',Helvetica, Arial, sans-serif;font-size: 14px;font-style: normal;font-weight: 700;line-height: 20px;color: #333333;padding: 0 0 8px 0;">
+                                                    Traveling with Pets
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td
+                                                    style="font-family: 'Suisse Intl',Helvetica, Arial, sans-serif;font-size: 14px;font-style: normal;font-weight: 400;line-height: 20px;color: #666666;">
+                                                    Learn more on our <a style="color: #0E68FF;text-decoration: none;"
+                                                        href="https://www.copaair.com/en-gs/travel-information/special-assistance/traveling-with-pets/"
+                                                        target="_blank">Traveling with Pets page.</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td width="48" style="vertical-align: top;padding-right: 16px;">
+                                        <img width="40"
+                                            src="https://www.copaair.com/webassets/images/equipaje-deportivo-icon.png"
+                                            alt="">
+                                    </td>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <td
+                                                    style="font-family: 'Suisse Intl',Helvetica, Arial, sans-serif;font-size: 14px;font-style: normal;font-weight: 700;line-height: 20px;color: #333333;padding: 0 0 8px 0;">
+                                                    Special Baggage
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td
+                                                    style="font-family: 'Suisse Intl',Helvetica, Arial, sans-serif;font-size: 14px;font-style: normal;font-weight: 400;line-height: 20px;color: #666666;">
+                                                    Learn more on our <a style="color: #0E68FF;text-decoration: none;"
+                                                        href="https://www.copaair.com/en-gs/travel-information/baggage-information/sports-luggage/"
+                                                        target="_blank">Special Baggage page.</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr style="border-spacing:0;border:0;padding:0;">
+            <td class="mobile-padding"
+                style="padding: 0px 64px 24px;background-color: #ffffff;font-family: 'gilroy', Arial, Helvetica, sans-serif;font-size: 16px;font-weight: 700;line-height: 24px;color: #333333;">
+                Review and complete the requirements for your trip
+            </td>
+        </tr>
+        <tr style="border-spacing:0;border:0;padding:0;">
+            <td class="mobile-padding"
+                style="padding: 0px 64px 24px;background-color: #ffffff;font-family: 'Suisse Intl',Helvetica, Arial, sans-serif;font-size: 14px;font-weight: 400;line-height: 20px;color: #666666;">
+                The requirements for your destination may change at any time. Make sure you meet the immigration and
+                health requirements necessary for travel on our travel requirements page.
+            </td>
+        </tr>
+        <tr style="border-spacing:0;border:0;padding:0;">
+            <td class="mobile-padding" style="padding: 0px 64px 40px;background-color:#ffffff">
+                <!--[if mso]>
+                      <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:40px;v-text-anchor:middle;width:668px;" arcsize="50%" stroke="false" fillcolor="#0032A0">
+                      <w:anchorlock/>
+                      <center style="">
+                      <![endif]-->
+
+                <!-- IMPRIMIR SI ESCENARIO DE VUELO < 30 MIN -->
+                <a class="btn-blue" href="https://www.copaair.com/travel-preparation-hub/en"
+                    style="font-family: 'gilroy-regular',Helvetica, Arial, sans-serif;display: inline-block;color: #ffffff;background-color: #0032A0;border-radius: 40px;width: 100%;margin-bottom:0;text-align: center;padding: 10px 16px;font-size: 14px;line-height: 20px;font-weight: 500;vertical-align: middle;text-decoration: none;">View
+                    travel requirements</a>
+                <!-- -->
+
+                <!--[if mso]>
+                      </center>
+                      </v:roundrect>
+                      <![endif]-->
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 32px 24px;background-color:#EFEFEE">
+                <table align="center">
+                    <tr>
+                        <td align="center"
+                            style="font-size: 12px;font-style: normal;font-weight: 400;line-height: 16px;color: #666666;padding-bottom: 8px;">
+                            Please do not reply to this email. For assistance, please contact. <a
+                                style="color: #0E68FF;font-weight:500;"
+                                href="https://www.copaair.com/en-gs/customer-service/call-center/" target="_blank">The
+                                Reservation Center</a></td>
+                    </tr>
+                    <tr>
+                        <td align="center"
+                            style="font-size: 12px;font-style: normal;font-weight: 400;line-height: 16px;color: #666666;padding-bottom: 16px;">
+                            Please review our <a style="color: #0E68FF;font-weight:500;"
+                                href="https://www.copaair.com/en-gs/legal/terms-and-conditions/privacy-policy/"><span>Privacy
+                                    Policy.</span></a></td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <a href="https://www.staralliance.com/en/">
+                                <img src="https://www.copaair.com/assets/StarAlliance-Footer-Logo-01-01.png" alt=""
+                                    width="168">
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!--[if mso | IE]>
+                  </td>
+               </tr>
+            </table>
+            <![endif]-->
+        <!-- Email wrapper end -->
+</body>
+
+</html>
