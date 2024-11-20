@@ -114,6 +114,24 @@
   </style>
   <style type="text/css">
   </style>
+
+  <!-- COPIAR ESTE CSS PARA ALERT -->
+
+  <!--[if mso]>
+        <style type="text/css">
+            .email-wrapper{
+                width: 800px
+        }
+
+        body, table, td, p, div, a, span {
+            font-family: Arial, sans-serif !important;
+        }
+				.remove-styles-mso {
+					background-color: transparent !important;
+					padding: 0 !important;
+				}
+        </style>
+    <![endif]-->
 </head>
 
 <body style="font-family: 'Poppins', Arial, sans-serif; margin: 0; border: 0; padding: 0;">
@@ -123,9 +141,15 @@
       <td style="padding: 15px 30px;">
         <!-- Start Alert Component -->
         <!-- Copy this code into Master Container -->
-        <table border="0" cellpadding="0" cellspacing="0" style=" width:100%;">
+        <table border="0" cellpadding="0" cellspacing="0" style=" width:100%; border-collapse: separate;">
           <tr>
-            <td style="padding: 8px 16px; background-color:#FFC82C; border-radius: 4px">
+            <td class="remove-styles-mso" style="mso-border-alt: none; padding: 8px 16px; background-color:#FFC82C; border-radius: 4px">
+              <!--[if mso]>
+              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" 
+                  xmlns:w="urn:schemas-microsoft-com:office:word" style="width:792px;height:40px;" 
+                  arcsize="10%" stroked="false" fillcolor="#FFC82C">
+                <w:anchorlock/>
+              <![endif]-->
               <table border="0" cellpadding="0" cellspacing="0" style="vertical-align: middle;" width="100%">
                 <tr>
                   <td style="padding-right: 8px;vertical-align:top;width:20px;max-width:20px">
@@ -138,6 +162,9 @@
                   </td>
                 </tr>
               </table>
+              <!--[if mso]>
+              </v:roundrect>
+              <![endif]-->
             </td>
           </tr>
         </table>
