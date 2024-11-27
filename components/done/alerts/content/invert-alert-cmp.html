@@ -109,13 +109,12 @@
     }
   </style>
   <style type="text/css">
-    @media all and (max-width:719px) {
-    }
+    @media all and (max-width:719px) {}
   </style>
   <style type="text/css">
   </style>
 
-  <!-- COPIAR ESTE CSS PARA INFO ALERT -->
+<!-- COPIAR ESTE CSS PARA ERROR ALERT -->
 
   <!--[if mso]>
         <style type="text/css">
@@ -128,7 +127,9 @@
         }
 				.remove-styles-mso {
 					background-color: transparent !important;
-					padding: 0 !important;
+				}
+				.mso-padding {
+				padding-left: 16px !important;
 				}
         </style>
     <![endif]-->
@@ -141,18 +142,25 @@
       <td style="padding: 15px 30px;">
         <!-- Start Alert Component -->
         <!-- Copy this code into Master Container -->
-        <table border="0" cellpadding="0" cellspacing="0" style=" width:100%; border-collapse: separate;">
+        <table border="0" cellpadding="0" cellspacing="0" style="width:100%; border-collapse: separate;">
           <tr>
             <td class="remove-styles-mso" style="mso-border-alt: none; padding: 16px; background-color:#001A66; border-radius: 4px; border: 1px solid #001A66;">
               <!--[if mso]>
               <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" 
-                  xmlns:w="urn:schemas-microsoft-com:office:word" style="width:792px;height:60px;" 
+                  xmlns:w="urn:schemas-microsoft-com:office:word" style="width:792px;height:60px;v-text-anchor:middle;" 
                   arcsize="4%" stroked="true" strokecolor="#001A66"fillcolor="#001A66">
                 <w:anchorlock/>
+								<v:textbox inset="0,0,0,0" style="v-text-anchor:middle;">
+								<center style="mso-line-height-rule:exactly; v-text-anchor:middle;">
               <![endif]-->
               <table border="0" cellpadding="0" cellspacing="0" style="vertical-align: middle;" width="100%">
                 <tr>
-                  <td style="padding-right: 8px;vertical-align:top;width:20px;max-width:20px">
+                  <!--[if mso]>
+                    <td style="padding: 16px;">
+                      <table border="0" cellpadding="0" cellspacing="0" style="vertical-align: middle;" width="100%">
+                        <tr>
+                    <![endif]-->
+                  <td style="padding-right: 8px;vertical-align:top;width:20px;max-width:20px" class="mso-padding">
                     <img src="https://www.copaair.com/webassets/icons/alerts/alert_incontent_inverted.png"
                       style="width: 20px; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; vertical-align: top;"
                       width="20" alt="information">
@@ -160,9 +168,16 @@
                   <td style="font-weight: 400; color: #FFFFFF; font-size: 14px; line-height: 20px;text-align: left">
                     Estamos teniendo inconvenientes con nuestras líneas telefónicas para Nicaragua, Perú y Bolivia. Estamos trabajando para recuperar el servicio.
                   </td>
+                    <!--[if mso]>
+                        </tr>
+                      </table>
+                    </td>
+                    <![endif]-->
                 </tr>
               </table>
               <!--[if mso]>
+							</center>
+							</v:textbox>
               </v:roundrect>
               <![endif]-->
             </td>
