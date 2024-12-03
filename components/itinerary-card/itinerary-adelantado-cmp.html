@@ -93,9 +93,21 @@
     }
   </style>
   <!-- Media Queries -->
+  <!-- COPIAR ESTE CSS PARA ITINERARY CARD -->
   <style type="text/css">
-    @media all and (max-width:719px) {}
+    @media all and (max-width:719px) {
+      .remove-text-mobile {
+        display: none !important;
+      }
+      .show-text-mobile {
+        display: block !important;
+      }
+      .itinerary-mobile-padding {
+        padding: 16px !important;
+      }
+    }
   </style>
+  <!-- FIN CSS PARA ITINERARY CARD -->
   <!-- CSS General Classes -->
   <style type="text/css">
   </style>
@@ -187,21 +199,18 @@
             <td style="padding: 32px 72px;" class="content-area-mobile-padding">
               <!-- Start Replace -->
               <!-- Copy this Code into Master Container -->
-              <table cellspacing="0" cellpadding="0" style="width:100%;min-width:100%;">
+              <table cellspacing="0" cellpadding="0" width="100%" style="width:100%;min-width:100%;">
                 <tr>
                   <td>
-                    <table cellpadding="0" cellspacing="0"
-                      style="width:100%;min-width:100%;border: 1px solid #DBDAD8; border-radius: 12px;border-collapse:separate;">
+                    <table cellpadding="0" cellspacing="0" style="width:100%;min-width:100%;border: 1px solid #DBDAD8; border-radius: 12px;border-collapse:separate;">
                       <tr>
-                        <td style="padding: 32px; border-collapse: collapse;">
+                        <td class="itinerary-mobile-padding" style="padding: 24px; border-collapse: collapse;">
                           <table cellpadding="0" cellspacing="0" style="width:100%;min-width:100%;">
                             <tr>
-                              <td
-                                style="font-family: SuisseIntl,Helvetica, Arial, sans-serif; font-size: 12px;line-height: 16px;font-weight:600">
+                              <td style="font-family: SuisseIntl,Helvetica, Arial, sans-serif; font-size: 12px;line-height: 16px;font-weight:600; color: #333333;">
                                 Jue, Ago 10 · CM 364
                               </td>
-                              <td align="right"
-                                style="font-family: SuisseIntl,Helvetica, Arial, sans-serif; font-weight: 400; font-size: 12px; line-height: 16px; color: #666666; vertical-align:top">
+                              <td align="right" style="font-family: SuisseIntl,Helvetica, Arial, sans-serif; font-weight: 400; font-size: 12px; line-height: 16px; color: #666666; vertical-align:top">
                                 <!--[if mso]>
                                             <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:28px;v-text-anchor:middle;width:128px;line-height: 1;" arcsize="50%" stroke="false" fillcolor="#0E68FF">
                                             <w:anchorlock/>
@@ -209,8 +218,8 @@
                                               <center style="mso-line-height-rule:exactly;">
                                     <![endif]-->
                                 <span style="white-space:nowrap;font-family: SuisseIntl, Helvetica, sans-serif;font-size: 12px;font-weight: 600;padding: 2px 12px;background-color: #0E68FF;border-radius: 12px;color:#ffffff">
-                                      Cancelado
-                                    </span>
+                                  Adelantado
+                                </span>
                                 <!--[if mso]>
                                             </center>
                                             </v:textbox>
@@ -222,20 +231,18 @@
                               <td colspan="2" style="padding-top: 16px;">
                                 <table cellpadding="0" cellspacing="0" style="width:100%;min-width:100%;">
                                   <tr>
-                                    <td style="white-space: nowrap;width: 1%;padding-right: 8px;">
+                                    <td style="white-space: nowrap;width: 1%;">
                                       <p class="time-desktop"
-                                        style="margin: 0; color:#333333;font-family:Gilroy, Helvetica, Arial, sans-serif;line-height: 32px;font-size: 20px;font-weight: 400;">
-                                        <s style="color: #333333;">
+                                        style="margin: 0; color:#333333;font-family:Gilroy, Helvetica, Arial, sans-serif;line-height: 24px;font-size: 18px;font-weight: 400;">
+                                        <s class="remove-text-mobile" style="color: #333333;">
                                           3:13&nbsp;pm
                                         </s>
-                                        <span style="font-weight: 700; color:#0E68FF">
-                                          9:30&nbsp;pm
-                                        </span>
+                                        <span style="font-size: 20px;padding: 0 8px; font-weight: 700; color:#0E68FF">
+                                          9:30&nbsp;pm</span>
                                       </p>
                                     </td>
                                     <td>
-                                      <p
-                                        style="border-top: solid 1px #DBDAD8;line-height: 0;margin: 0px auto;width: 100%;display: block;">
+                                      <p style="border-top: solid 1px #999999;line-height: 0;margin: 0px auto;width: 100%;">
                                         &nbsp;
                                       </p>
                                     </td>
@@ -244,21 +251,31 @@
                                       6h&nbsp;52m
                                     </td>
                                     <td>
-                                      <p
-                                        style="border-top: solid 1px #DBDAD8;line-height: 0;margin: 0px auto;width: 100%;display: block;">
+                                      <p style="border-top: solid 1px #999999;line-height: 0;margin: 0px auto;width: 100%;">
                                         &nbsp;
                                       </p>
                                     </td>
-                                    <td style="text-align: right;width: 1%;white-space: nowrap;padding-left: 8px;">
+                                    <td align="right" style="text-align: right;width: 1%;white-space: nowrap;">
                                       <p class="time-desktop"
-                                        style="margin: 0; color: #333333;font-family:Gilroy, Helvetica, Arial, sans-serif;line-height: 32px;font-size: 20px;font-weight: 400;">
-                                        <span style="font-weight: 700; color:#0E68FF">
-                                          11:20&nbsp;am
-                                        </span>
-                                        <s style="color: #333333;">
+                                        style="margin: 0; color: #333333;font-family:Gilroy, Helvetica, Arial, sans-serif;line-height: 24px;font-size: 18px;font-weight: 400;">
+                                        <span style="font-size: 20px;padding: 0 8px; font-weight: 700; color:#0E68FF">
+                                          11:20&nbsp;am</span>
+                                        <s class="remove-text-mobile" style="color: #333333;">
                                           3:13&nbsp;pm
                                         </s>
                                       </p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="3" style="width: 50%;">
+                                      <s class="show-text-mobile" style="line-height: 24px;font-size: 18px;font-weight: 400;display: none; color: #333333;">
+                                        3:13&nbsp;pm
+                                      </s>
+                                    </td>
+                                    <td colspan="3" style="text-align: right;width: 50%;">
+                                      <s class="show-text-mobile" style="line-height: 24px;font-size: 18px;font-weight: 400;display: none; color: #333333;">
+                                        3:13&nbsp;pm
+                                      </s>
                                     </td>
                                   </tr>
                                 </table>
@@ -287,16 +304,16 @@
                                     <td
                                       style="font-family: SuisseIntl,Helvetica, Arial, sans-serif; font-size: 12px;padding-right: 12px; color: #666666;width: 50%;line-height: 16px;vertical-align: top;font-weight: 600;">
                                       Terminal: 
-                                      <span style="color: black;">2</span>
+                                      <span style="color: #333333;">2</span>
                                       Gate: 
-                                      <span style="color: black;">101</span>
+                                      <span style="color: #333333;">101</span>
                                     </td>
                                     <td align="right"
                                       style="font-family: SuisseIntl,Helvetica, Arial, sans-serif; font-size: 12px;padding-left: 12px; text-align: right; color: #666666;width: 50%;line-height: 16px;vertical-align: top;font-weight: 600;">
                                       Terminal: 
-                                      <span style="color: black;">2</span>
+                                      <span style="color: #333333;">2</span>
                                       Gate: 
-                                      <span style="color: black;">101</span>
+                                      <span style="color: #333333;">101</span>
                                     </td>
                                   </tr>
                                 </table>
