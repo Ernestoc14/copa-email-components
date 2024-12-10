@@ -115,6 +115,14 @@
       .remove-padding-mobile {
         padding: 0 !important;
       }
+
+      .right-padding-mobile {
+        padding: 0 8px 0 0 !important;
+      }
+
+      .left-padding-mobile {
+        padding: 0 0 0 8px !important;
+      }
     }
   </style>
   <!-- FIN CSS PARA ITINERARY CARD -->
@@ -123,16 +131,21 @@
   </style>
 
   <!--[if mso]>
-        <style type="text/css">
-            .email-wrapper{
-                width: 800px
-        }
-
-        body, table, td, p, div, a, span {
-            font-family: Arial, sans-serif !important;
-        }
-        </style>
-    <![endif]-->
+  <style type="text/css">
+  .email-wrapper{
+    width: 800px
+  }
+    .right-padding-mobile {
+      padding: 0 8px 0 0 !important;
+    }
+  .left-padding-mobile {
+    padding: 0 0 0 8px !important;
+  }
+  body, table, td, p, div, a, span {
+    font-family: Arial, sans-serif !important;
+  }
+  </style>
+  <![endif]-->
 </head>
 
 <body
@@ -241,9 +254,8 @@
                               <td colspan="2" style="padding-top: 16px;">
                                 <table cellpadding="0" cellspacing="0" style="width:100%;min-width:100%;">
                                   <tr>
-                                    <td style="white-space: nowrap;">
-                                      <p class="time-desktop"
-                                        style="margin: 0; color:#333333;font-family:Gilroy, Helvetica, Arial, sans-serif;">
+                                    <td class="right-padding-mobile"  style="white-space: nowrap;">
+                                      <p style="margin: 0; color:#333333;font-family:Gilroy, Helvetica, Arial, sans-serif;">
                                         <s class="remove-text-mobile" style="color: #333333; font-size: 18px; font-weight: 400;">
                                           3:13&nbsp;pm
                                         </s>
@@ -265,9 +277,8 @@
                                         &nbsp;
                                       </p>
                                     </td>
-                                    <td align="right" style="text-align: right;white-space: nowrap;">
-                                      <p class="time-desktop"
-                                        style="margin: 0; color: #333333;font-family:Gilroy, Helvetica, Arial, sans-serif;">
+                                    <td align="right" class="left-padding-mobile" style="text-align: right;white-space: nowrap;">
+                                      <p style="margin: 0; color: #333333;font-family:Gilroy, Helvetica, Arial, sans-serif;">
                                         <span class="remove-padding-mobile" style="font-size: 20px; line-height: 32px; padding: 0 8px; font-weight: 700; color:#0E68FF">
                                           11:20&nbsp;am</span>
                                         <s class="remove-text-mobile" style="color: #333333; font-size: 18px; font-weight: 400;">
@@ -278,12 +289,12 @@
                                   </tr>
                                   <tr>
                                     <td colspan="3" style="width: 50%;">
-                                      <s class="show-text-mobile" style="line-height: 24px;font-size: 18px;font-weight: 400;display: none; color: #333333;">
+                                      <s class="show-text-mobile" style="line-height: 32px;font-size: 18px;font-weight: 400;display: none; color: #333333;">
                                         3:13&nbsp;pm
                                       </s>
                                     </td>
                                     <td colspan="3" style="text-align: right;width: 50%;">
-                                      <s class="show-text-mobile" style="line-height: 24px;font-size: 18px;font-weight: 400;display: none; color: #333333;">
+                                      <s class="show-text-mobile" style="line-height: 32px;font-size: 18px;font-weight: 400;display: none; color: #333333;">
                                         3:13&nbsp;pm
                                       </s>
                                     </td>
