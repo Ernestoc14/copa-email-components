@@ -105,6 +105,9 @@
       .show-item-mobile {
         display: block !important;
       }
+      .content-area-mobile-padding {
+        padding: 16px !important;
+      }
     }
   </style>
   <!-- FIN CSS PARA ITINERARY CARD -->
@@ -318,66 +321,6 @@
                                       class="outlook-status-td">
                                       <table border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto;">
                                         <tr>
-                                        <!--IMPRIMIR CUANDO ES INFANTE, INTERLINEA Y SIN STATUS-->
-                                        <!--[if mso]>
-                                        <td>
-                                          <v:oval style="width: 56px; height: 56px;position: static;" strokecolor="#D6E3FF"></v:oval>
-                                          <v:oval style="position:absolute;margin-left:2px;;margin-top:2px;width:52px;height:52px" stroke="false">
-                                            <v:fill color="#D6E3FF" />
-                                            <v:textbox inset="0,0,0,0">
-                                              <p style="text-align:center;font-size:12pt;font-family:Arial; position:absolute;margin-left:1px;margin-top:8px;color: #0032A0;">KA</p>
-                                            </v:textbox>
-                                          </v:oval>
-                                        </td>
-                                        <![endif]-->
-                                        <!--IMPRIMIR CUANDO ES MEMBER-->
-                                        <!--[if mso]>
-                                        <td>
-                                          <v:oval style="width: 56px; height: 56px;position: static;" strokecolor="#0032A0;"></v:oval>
-                                            <v:oval style="position:absolute;margin-left:2px;;margin-top:2px;width:52px;height:52px" stroke="false">
-                                              <v:fill color="#0032A0;" />
-                                                <v:textbox inset="0,0,0,0">
-                                                  <p style="text-align:center;font-size:12pt;font-family:Arial; position:absolute;margin-left:1px;margin-top:8px;color: #F9F9F8;">KA</p>
-                                                </v:textbox>
-                                              </v:oval>
-                                        </td>
-                                        <![endif]-->
-                                        <!--IMPRIMIR CUANDO ES SILVER-->
-                                        <!--[if mso]>
-                                        <td>
-                                          <v:oval style="width: 56px; height: 56px;position: static;" strokecolor="#062660;"></v:oval>
-                                          <v:oval style="position:absolute;margin-left:2px;;margin-top:2px;width:52px;height:52px" stroke="false">
-                                            <v:fill color="#062660;" />
-                                            <v:textbox inset="0,0,0,0">
-                                              <p style="text-align:center;font-size:12pt;font-family:Arial; position:absolute;margin-left:1px;margin-top:8px;color: #F9F9F8;">KA</p>
-                                            </v:textbox>
-                                          </v:oval>
-                                        </td>
-                                        <![endif]-->
-                                        <!--IMPRIMIR CUANDO ES GOLD-->
-                                        <!--[if mso]>
-                                        <td>
-                                          <v:oval style="width: 56px; height: 56px;position: static;" strokecolor="#8D7249;"></v:oval>
-                                          <v:oval style="position:absolute;margin-left:2px;;margin-top:2px;width:52px;height:52px" stroke="false">
-                                          <v:fill color="#8D7249;" />
-                                            <v:textbox inset="0,0,0,0">
-                                              <p style="text-align:center;font-size:12pt;font-family:Arial; position:absolute;margin-left:1px;margin-top:8px;color: #F9F9F8;">KA</p>
-                                            </v:textbox>
-                                          </v:oval>
-                                        </td>
-                                      <![endif]-->
-                                      <!--IMPRIMIR CUANDO ES PLATINUM-->
-                                      <!--[if mso]>
-                                      <td>
-                                      <v:oval style="width: 56px; height: 56px;position: static;" strokecolor="#666666;"></v:oval>
-                                        <v:oval style="position:absolute;margin-left:2px;;margin-top:2px;width:52px;height:52px" stroke="false">
-                                        <v:fill color="#666666;" />
-                                          <v:textbox inset="0,0,0,0">
-                                          <p style="text-align:center;font-size:12pt;font-family:Arial; position:absolute;margin-left:1px;margin-top:8px;color: #F9F9F8;">KA</p>
-                                        </v:textbox>
-                                      </v:oval>
-                                      </td>
-                                      <![endif]-->
                                       <!--IMPRIMIR CUANDO ES PRESIDENTIAL-->
                                       <!--[if mso]>
                                       <td>
@@ -425,7 +368,7 @@
                                 </table>
                               </td>
                               <td class="outlook-flight-details">
-                                <table cellspacing="0" cellpadding="0" width="100%" style="width:100%;min-width:100%;">
+                                <table border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;min-width:100%;">
                                   <tr>
                                     <td style="font-family: SuisseIntl,Helvetica, Arial, sans-serif; font-weight: 600; font-size: 14px; line-height: 20px; color: #333333; padding-bottom: 4px;">
                                       Katia Selena Vega Rios
@@ -444,11 +387,13 @@
                                   </tr>
                                   <tr>
                                     <td class="remove-item-mobile" style="font-family: SuisseIntl,Helvetica, Arial, sans-serif; font-weight: 600; font-size: 12px; line-height: 16px; color: #333333; padding-bottom: 4px;">
-                                      Documents: 
+                                      <p style="margin: 0;">
+                                        Documents: 
+                                      </p>
                                       <span style="text-decoration: underline; color: #666666;">
                                         Verification Completed
                                       </span>
-                                      <img style="width: 16px; height: 16px; vertical-align: top;" src="https://www.copaair.com/webassets/icons/alerts/alert_banner_error.png" alt="" width="16" height="16">
+                                      <img valign="top" style="width: 16px; height: 16px; vertical-align: top;" src="https://www.copaair.com/webassets/icons/alerts/alert_banner_error.png" alt="" width="16" height="16">
                                     </td>
                                   </tr>
                                   <tr>
@@ -460,14 +405,16 @@
                               </td>
                             </tr>
                             <tr>
-                              <table  border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                              <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
                                 <tr>
                                   <td class="show-item-mobile" style="width: 100%; display: none; font-family: SuisseIntl,Helvetica, Arial, sans-serif; font-weight: 600; font-size: 12px; line-height: 16px; color: #333333; padding-bottom: 4px;">
-                                    Documents: 
+                                    <p style="margin: 0;">
+                                      Documents: 
+                                    </p>
                                     <span style="text-decoration: underline; color: #666666;">
                                       Verification Completed
                                     </span>
-                                    <img style="width: 16px; height: 16px; vertical-align: top;" src="https://www.copaair.com/webassets/icons/alerts/alert_banner_error.png" alt="" width="16" height="16">
+                                    <img valign="top" style="width: 16px; height: 16px; vertical-align: top;" src="https://www.copaair.com/webassets/icons/alerts/alert_banner_error.png" alt="" width="16" height="16">
                                   </td>
                                 </tr>
                                 <tr>
