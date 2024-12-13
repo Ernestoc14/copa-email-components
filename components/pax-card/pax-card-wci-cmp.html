@@ -101,9 +101,13 @@
       }
       .reorder-mobile {
         display: block !important;
+        padding: 0 !important;
       }
       .show-item-mobile {
         display: block !important;
+      }
+      .pax-card-mobile-padding {
+        padding: 16px !important;
       }
     }
   </style>
@@ -290,10 +294,10 @@
                     <table cellpadding="0" cellspacing="0" border="0"
                       style="width: 100%;border: 1px solid #DBDAD8; border-radius: 12px;border-collapse:separate">
                       <tr>
-                        <td style="padding: 24px;" class="outlook-reset-padding">
+                        <td style="padding: 24px;" class="pax-card-mobile-padding">
                           <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
                             <tr>
-                              <td style="padding: 0 16px 0 0; width: 58px;height: 58px;vertical-align: top;" width="58"
+                              <td style="padding-right: 16px; width: 58px;height: 58px;vertical-align: top;" width="58"
                                 height="58" class="outlook-status-td">
                                 <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;border-collapse:separate"
                                   class="outlook-status-td">
@@ -313,7 +317,7 @@
                                           6. Presidential
                                                   "status-line-presidential-status"
                                     -->
-                                    <td class="status-line-presidential-status" width="56" height="56"
+                                    <td class="status-line-member-status" width="56" height="56"
                                       style="border-radius: 50%;width: 56px;height: 56px;min-width: 56px;"
                                       class="outlook-status-td">
                                       <table border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto;">
@@ -413,7 +417,7 @@
                                       -->
                                           <td width="52" height="52"
                                             style="border-radius: 50%;text-align: center;font-size: 16px;font-style: normal;font-weight: 600;line-height: 20px;min-width: 52px;"
-                                            class="status-bg-presidential-status outlook-status-td">
+                                            class="status-bg-member-status outlook-status-td">
                                             <span class="outlook-status-td status-color-all-status">
                                               KA
                                             </span>
@@ -462,17 +466,29 @@
                             <tr>
                               <table  border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
                                 <tr>
-                                  <td class="show-item-mobile" style="width: 100%; display: none; font-family: SuisseIntl,Helvetica, Arial, sans-serif; font-weight: 600; font-size: 12px; line-height: 16px; color: #333333; padding-bottom: 4px;">
-                                    Documents: 
-                                    <span style="text-decoration: underline; color: #666666;">
-                                      Verification Completed
+                                  <td class="show-item-mobile" style=" display: none; padding: 16px 0 8px; font-family: SuisseIntl,Helvetica, Arial, sans-serif; font-weight: 600; font-size: 12px; line-height: 16px; vertical-align:top">
+                                    <!--[if mso]>
+                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:28px;v-text-anchor:middle;width:128px;line-height: 1;" arcsize="50%" stroke="false" fillcolor="#FFF4D5">
+                                        <w:anchorlock/>
+                                        <v:textbox inset="0,0,0,0">
+                                        <center style="mso-line-height-rule:exactly;">
+                                    <![endif]-->
+                                    <span style="white-space:nowrap;font-family: SuisseIntl, Helvetica, sans-serif;font-size: 12px;font-weight: 600;padding: 4px 8px;background-color: #FFF4D5;border-radius: 12px;color:#121212">
+                                      Check-In Pendiente
                                     </span>
-                                    <img style="width: 16px; height: 16px; vertical-align: top;" src="https://www.copaair.com/webassets/icons/alerts/alert_banner_error.png" alt="" width="16" height="16">
+                                    <!--[if mso]>
+                                        </center>
+                                        </v:textbox>
+                                        </v:roundrect>
+                                    <![endif]-->
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td class="show-item-mobile" style="display: none; font-family: SuisseIntl,Helvetica, Arial, sans-serif; font-weight: 600; font-size: 12px; line-height: 16px; color: #0C7E3E;">
-                                    Check-In Completed
+                                  <td class="show-item-mobile" style="width: 100%; display: none; font-family: SuisseIntl,Helvetica, Arial, sans-serif; font-weight: 600; font-size: 12px; line-height: 16px; color: #333333;">
+                                    Documents: 
+                                    <span style=" color: #0C7E3E;">
+                                      Verification Completed
+                                    </span>
                                   </td>
                                 </tr>
                               </table>
