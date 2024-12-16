@@ -2,22 +2,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
   xmlns:o="urn:schemas-microsoft-com:office:office">
 
+<head></head>
+
 <head>
   <title></title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
   <meta name="x-apple-disable-message-reformatting">
   <!--[if mso]>
-    <xml>
-    <o:OfficeDocumentSettings>
-      <o:AllowPNG/>
-      <o:PixelsPerInch>96</o:PixelsPerInch>
-    </o:OfficeDocumentSettings>
-    </xml>
-    <![endif]-->
+        <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG/>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+        </xml>
+        <![endif]-->
 
   <style type="text/css">
     @font-face {
@@ -40,7 +42,7 @@
       font-family: SuisseIntl;
       font-style: normal;
       font-display: swap;
-      font-weight: 500;
+      font-weight: 600;
       src: local('SuisseIntlMedium'), local('SuisseIntl-Medium'), url(https://www.copaair.com/webassets/fonts/suisse/SuisseIntl-Medium-WebS.woff) format('woff'), url(https://www.copaair.com/webassets/fonts/suisse/SuisseIntl-Medium-WebS.woff2) format('woff2');
     }
 
@@ -48,7 +50,7 @@
       font-family: SuisseIntl;
       font-style: normal;
       font-display: swap;
-      font-weight: 600;
+      font-weight: 700;
       src: local('SuisseIntlSemiBold'), local('SuisseIntl-SemiBold'), url(https://www.copaair.com/webassets/fonts/suisse/SuisseIntl-SemiBold-WebS.woff) format('woff'), url(https://www.copaair.com/webassets/fonts/suisse/SuisseIntl-SemiBold-WebS.woff2) format('woff2');
     }
 
@@ -67,11 +69,20 @@
       font-weight: 700;
       src: local('GilroyBold'), local('Gilroy-Bold'), url(https://www.copaair.com/webassets/fonts/gilroy/gilroy-bold-webfont.woff) format('woff'), url(https://www.copaair.com/webassets/fonts/gilroy/gilroy-bold-webfont.woff2) format('woff2');
     }
-  </style>
 
-  <style type="text/css">
     body {
       background: #F5F5F5;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    *[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
     }
 
     table,
@@ -80,34 +91,8 @@
       mso-table-lspace: 0pt;
       mso-table-rspace: 0pt;
     }
-
-    p {
-      margin: 0;
-    }
-
-    th {
-      text-align: left !important;
-    }
-
-    *[x-apple-data-detectors] {
-      color: inherit !important;
-      text-decoration: inherit !important;
-    }
   </style>
-  <style type="text/css">
-    body {
-      -webkit-font-smoothing: antialiased;
-    }
-  </style>
-
-  <style>
-    html,
-    body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-  </style>
+  <!-- Media Queries -->
   <style type="text/css">
     @media all and (max-width:360px) {
       .xsmall-reorder {
@@ -116,21 +101,15 @@
       }
     }
 
-    @media all and (max-width:500px) {
-      .two-first-fields {
-        display: block;
-        clear: both;
-      }
-
-      .code-cell {
-        clear: both;
-        text-align: left;
-        padding: 32px 0 0 0 !important;
-        min-width: 100% !important;
-      }
-    }
-
     @media all and (max-width:719px) {
+      .mobile-block {
+        display: block !important;
+      }
+
+      .card-logo {
+        margin-right: 0 !important;
+      }
+
       .date-cell {
         width: auto !important;
       }
@@ -155,126 +134,255 @@
       .info-mobile-padding {
         padding-bottom: 24px;
       }
+
       .mid-right-spacing {
         padding-right: 56px;
       }
     }
   </style>
+  <!-- CSS General Classes -->
   <style type="text/css">
-    .title-info-flight {
-      font-weight: 400;
-      font-size: 14px;
-      color: #666666;
-      font-family: SuisseIntl, Helvetica, Arial, sans-serif;
-      margin: 0;
-      margin-bottom: 5px;
-    }
-
-    .subtitle-info-flight {
-      font-size: 20px;
-      font-weight: 700;
-      color: #333333;
-      font-family: Gilroy, Helvetica, Arial, sans-serif;
-      margin: 0;
-    }
   </style>
+  <!--[if mso]>
+        <style type="text/css">
+            .email-wrapper{
+                width: 800px
+        }
+
+        body, table, td, p, div, a, span {
+            font-family: Arial, sans-serif !important;
+        }
+        </style>
+    <![endif]-->
 </head>
 
-<body style="font-family: 'Poppins', Arial, sans-serif; margin: 0; border: 0; padding: 0;">
-  <table cellpadding="0" cellspacing="0" border="0"
-    style="margin: 0;width: 100%;background-color: #fcfcfc; border-collapse: collapse;">
+<body
+  style="margin: 0;padding: 0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;font-family: SuisseIntl,Helvetica, Arial, sans-serif;">
+  <!-- Lenguaje de marcado (markup) de Gmail -->
+  <!-- <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "FlightReservation",
+      "reservationNumber": "{{RXJ34P}}",
+      "reservationStatus": "http://schema.org/Confirmed",
+      "reservationFor": {
+        "@type": "Flight",
+        "flightNumber": "{{CM123}}",
+        "airline": {
+          "@type": "Airline",
+          "name": "Copa Airlines",
+          "iataCode": "CM"
+        },
+        "departureAirport": {
+          "@type": "Airport",
+          "name": "{{San Francisco Airport}}",
+          "iataCode": "{{SFO}}"
+        },
+        "departureTime": "{{2027-03-04T20:15:00-08:00}}",
+        "arrivalAirport": {
+          "@type": "Airport",
+          "name": "{{John F. Kennedy International Airport}}",
+          "iataCode": "{{JFK}}"
+        },
+        "arrivalTime": "{{2027-03-05T06:30:00-05:00}}"
+      }
+    }
+    </script> -->
+  <!-- Tarjeta adaptable de Outlook -->
+  <!-- <script type="application/adaptivecard+json">
+    {
+      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+      "type": "AdaptiveCard",
+      "version": "1.3",
+      "body": [
+        {
+          "type": "TextBlock",
+          "text": "Seat Update for Your Upcoming Flight",
+          "weight": "bolder",
+          "size": "medium"
+        },
+        {
+          "type": "TextBlock",
+          "text": "Flight: {{CM123}}",
+          "spacing": "none"
+        },
+        {
+          "type": "TextBlock",
+          "text": "Departure: {{2024-08-02 11:00 AM}}",
+          "spacing": "none"
+        },
+        {
+          "type": "TextBlock",
+          "text": "Arrival: {{2024-08-02 03:00 PM}}",
+          "spacing": "none"
+        }
+      ]
+    }
+  </script> -->
+  <div>&nbsp;</div>
+  <table class="email-wrapper" align="center" border="0" cellpadding="0" cellspacing="0"
+    style="padding: 5px 0 0 0;max-width: 800px;">
     <tr>
-      <td style="font-size: 14px; padding: 32px 48px">
-        <!-- Start Infobar Cmp-->
-        <table border="0" cellpadding="0" cellspacing="0">
+      <td>
+        <!-- Start Header Wrapper Blue BG -->
+        <table border="0" cellpadding="0" cellspacing="0"
+          style="background-color: #0032A0; border-top-left-radius: 8px; border-top-right-radius: 8px;">
           <tr>
             <td>
-              <table align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+              <!-- Start Header Logo -->
+              <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%;min-width:100%;">
                 <tr>
-                  <td class="reorder-mobile-table xsmall-reorder">
-                    <table border="0" cellpadding="0" cellspacing="0" class="info-mobile-padding">
+                  <td class="header-logo-padding" style="padding: 32px 32px 0;">
+                    <!-- Start Replace Header Component -->
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%;min-width:100%;">
                       <tr>
-                        <td style="padding-right: 16px" class="destino-img-remove">
-                          <!--[if mso]>
-                              <v:oval xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="display:inline-block;text-decoration:none;color:#333333;border-radius:50%;width:55px;height:56px" strokecolor="#ffffff" strokeweight="1pt">
-                                <v:fill color="#0032A0" />
-                              </v:oval>
-                          <![endif]-->
-                          <!--[if mso]>
-                            <v:rect stroked="f" filled="false" style="position:absolute; top:-3.1px; left:-8.3px; width:100%;">
-                          <![endif]-->
-                          <div style="border: 1px solid #0032A0; width: 52px; height:52px; border-radius: 50%; padding: 1px; margin: 0 auto;" class="no-border">
-                            <!--Change the "JFK" below with the IAT Code of the destination in uppercase-->
-                            <img src="https://www.copaair.com/webassets/images/destinos/circulados/JFK.png" width="52"
-                              height="52" border="0" style="border: 0;">
-                          </div>    
-                          <!--[if mso]>
-                            </v:rect>
-                          <![endif]-->
-                        </td>
-                        <td class="info-mobile-padding">
-                          <p class="title-info-flight">
-                            Destination:
-                          </p>
-                          <p class="subtitle-info-flight" style="white-space: nowrap;">
-                            Santiago de los Caballeros
-                          </p>
+                        <td style="color: white; padding-bottom: 20px;">
+                          Header Logo/Images Section - Estilos dependen del Header Component Variant
                         </td>
                       </tr>
                     </table>
-                  </td>
-                  <td class="reorder-mobile-table">
-                    <table border="0" cellspacing="0" cellpadding="0">
-                      <tr>
-                        <td style="padding: 0 32px; width: 1px;" class="infobar-divider-remove">
-                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tr>
-                              <td style="border-right: 1px solid #CCCCCB; width:1px; height:24px;">
-                                &nbsp;
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                        <td class="xsmall-reorder mid-right-spacing info-mobile-padding">
-                          <p class="title-info-flight">
-                            Date:
-                          </p>
-                          <p id="fDate" class="subtitle-info-flight" style="white-space: nowrap;">
-                            Mar&nbsp;&#8203;,18&nbsp;&#8203;Sep
-                          </p>
-                        </td>
-                        <td style="padding: 0 32px; width: 1px;" class="infobar-divider-remove">
-                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tr>
-                              <td style="border-right: 1px solid #CCCCCB; width:1px; height:24px;">
-                                &nbsp;
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                        <td class="xsmall-reorder info-mobile-padding">
-                          <p class="title-info-flight" style="white-space: nowrap;">
-                            Codigo de reserva:
-                          </p>
-                          <p class="subtitle-info-flight">
-                            EBXGHT
-                          </p>
-                        </td>
-                      </tr>
-                    </table>
+                    <!-- End Replace Header Component -->
                   </td>
                 </tr>
               </table>
+              <!-- End Header Logo -->
+              <!-- Start Header Info -->
+              <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%;min-width:100%;">
+                <tr>
+                  <td class="mobile-padding" style="background-color: #0032A0; padding: 32px 72px">
+                    <!-- Start Replace Header Info Component -->
+                    <table border="0" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td class="mobile-block">
+                          <table border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                              <td class="reorder-mobile-table xsmall-reorder">
+                                <table border="0" cellpadding="0" cellspacing="0" class="info-mobile-padding">
+                                  <tr>
+                                    <td class="destino-img-remove" style="padding-right:16px">
+                                      <!--[if mso]>
+                                          <v:oval xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="display:inline-block;text-decoration:none;color:#333333;border-radius:50%;width:55px;height:56px" strokecolor="#ffffff" strokeweight="1pt">
+                                          <v:fill color="#0032A0" />
+                                          </v:oval>
+                                      <![endif]-->
+                                      <!--[if mso]>
+                                        <v:rect stroked="f" filled="false" style="position:absolute; top:-3.1px; left:-8.3px; width:100%;">
+                                      <![endif]-->
+                                      <div class="no-border"
+                                        style="border: 1px solid #ffffff;width: 52px;height: 52px;border-radius: 50%;padding: 1px;margin: 0 auto;">
+                                        <!--Change the "JFK" below with the IAT Code of the destination in uppercase-->
+                                        <img src="https://www.copaair.com/webassets/images/destinos/circulados/JFK.png"
+                                          width="52" height="52" border="0" alt="City IMG" style="border:0;">
+                                      </div>
+                                      <!--[if mso]>
+                                        </v:rect>
+                                      <![endif]-->
+                                    </td>
+                                    <td class="info-mobile-padding">
+                                      <p
+                                        style="margin: 0;font-family: SuisseIntl, Helvetica, Arial, sans-serif;font-size: 14px;font-style: normal;font-weight: 400;line-height: 20px;color: #ffffff;">
+                                        Destination:</p>
+                                      <p
+                                        style="margin: 0;font-family: Gilroy, Helvetica, Arial, sans-serif;font-size: 20px;font-style: normal;font-weight: 700;line-height: 32px;color: #ffffff;">
+                                        New York</p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                              <td class="infobar-divider-remove" style="padding: 0 32px; width: 1px;">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                  <tr>
+                                    <td style="border-right: 1px solid #CCCCCB;height:24px;">
+                                      &nbsp;
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td class="reorder-mobile-table">
+                          <table border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                              <td class="xsmall-reorder mid-right-spacing info-mobile-padding">
+                                <p
+                                  style="margin: 0;font-family: SuisseIntl, Helvetica, Arial, sans-serif;font-size: 14px;font-style: normal;font-weight: 400;line-height: 20px;color: #ffffff;">
+                                  Date:</p>
+                                <p
+                                  style="margin: 0;font-family: Gilroy, Helvetica, Arial, sans-serif;font-size: 18px;font-style: normal;font-weight: 700;line-height: 24px;color: #ffffff;white-space:nowrap">
+                                  Tue, Aug 20</p>
+                              </td>
+                              <td style="padding: 0 32px; width: 1px;" class="infobar-divider-remove">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td style="border-right: 1px solid #CCCCCB;width:1px; height:24px;">
+                                      &nbsp;
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                              <td class="xsmall-reorder info-mobile-padding">
+                                <p
+                                  style="margin: 0;font-family: SuisseIntl, Helvetica, Arial, sans-serif;font-size: 14px;font-style: normal;font-weight: 400;line-height: 20px;color: #ffffff;">
+                                  Reservation code:</p>
+                                <p
+                                  style="margin: 0;font-family: Gilroy, Helvetica, Arial, sans-serif;font-size: 18px;font-style: normal;font-weight: 700;line-height: 24px;color: #ffffff;">
+                                  EBXGHT</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- End Replace Header Info Component -->
+                  </td>
+                </tr>
+              </table>
+              <!-- End Header Info -->
             </td>
           </tr>
         </table>
-        <!-- End InfoBar Cmp -->
+        <!-- End Wrapper Header Blue BG -->
+        <!-- Start Body White BG -->
+        <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%;min-width:100%;">
+          <tr>
+            <td class="mobile-padding" style="padding: 32px;">
+              <!-- Start Replace Body -->
+              <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%;min-width:100%;">
+                <tr>
+                  <td>
+                    Body Section Tomara tamano del Children
+                  </td>
+                </tr>
+              </table>
+              <!-- End Replace Body -->
+            </td>
+          </tr>
+        </table>
+        <!-- End Body White BG  -->
+        <!-- Start Footer -->
+        <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%;min-width:100%;">
+          <tr>
+            <td class="mobile-padding"
+              style="padding: 32px;background-color:#EFEFEE; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;">
+              <!-- Start Replace Footer -->
+              <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%;min-width:100%;">
+                <tr>
+                  <td>
+                    Footer Section Tomara tamano del Children
+                  </td>
+                </tr>
+              </table>
+              <!-- End Replace Footer -->
+            </td>
+          </tr>
+        </table>
+        <!-- End Footer -->
       </td>
     </tr>
   </table>
+  <div>&nbsp;</div>
 </body>
 
+
 </html>
-
-
-
