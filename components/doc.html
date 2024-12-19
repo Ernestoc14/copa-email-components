@@ -1,0 +1,108 @@
+<style type="text/css">
+  .call-center-info{
+  display: flex;
+}
+
+.call-center-info > div{
+  display: flex;
+  align-items:center;
+}
+
+.call-center-info >div:nth-child(1){
+  color: #333333 !important;
+  padding-right: 64px;
+}
+
+.call-center-info >div:nth-child(3){
+  padding-left: 64px;
+}
+
+.call-center-info >div:nth-child(2){
+  padding: 0 64px;
+  border-left: 1px solid #CCCCCB;
+}
+  
+  .call-center-info >div:nth-child(2) > div > span{
+    display: inline !important;
+    color: #333333 !important;
+}
+  .call-center-info >div:nth-child(2) > div > p{
+    display: inline !important;
+}
+
+.call-center-info > div > img{
+  width: 72px;
+  height: 72px;
+  margin: 0 !important;
+}
+  
+  .call-center-info > div {
+    gap: 16px
+}
+  
+  .call-center-info > div > div > h3{
+    margin: 0 !important;
+}
+  .call-center-info > div > div > p{
+    margin: 0 !important;
+}
+  
+  .call-center-info > div > div > a{
+    margin: 0 !important;
+    font-size: 14px !important;
+    text-decoration: underline !important;
+}
+  
+  .call-center-info > div > div > a > span > p{
+    display: none !important;
+}
+  
+  @media all and (max-width: 959px) {
+  .call-center-info{
+  flex-direction: column;
+}
+}
+
+  .call-center-info >div:nth-child(1){
+  padding-right: 0;
+}
+
+.call-center-info >div:nth-child(3){
+  padding-left: 0;
+}
+
+.call-center-info >div:nth-child(2){
+  padding: 0;
+  border-right: none;
+  border-left: none;
+}
+
+@media all and (max-width: 1366px) {
+  .call-center-info >div:nth-child(2) > div > p{
+  display: block !important;
+}
+}
+
+@media all and (max-width: 959px) {
+  .call-center-info {
+  gap: 16px;
+  }
+}
+</style>
+
+<div class="call-center-info">
+  <div>
+    <img alt="agente-callcenter" src="https://www.copaair.com/assets/agent-call-center.svg"/>
+    <div>
+      <h3>Número principal</h3>
+      <p style="color:  #333"><a href="tel:+5072172672">+507 217 2672</a></p>
+    </div>
+  </div>
+  <div>
+    <img alt="agente-callcenter" src="https://www.copaair.com/assets/calendar-star.svg"/>
+    <div>
+      <h3>Horarios:</h3>
+      <p>Lunes a Domingo </p><span style="color: #333333">5:00 am - 11:00 pm</span>
+    </div>
+  </div>
+</div>
